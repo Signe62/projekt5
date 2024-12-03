@@ -1,0 +1,147 @@
+body {
+    background-color: #eeeeee; /* Baggrundsfarven på hele hjemmesiden*/
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: montserrat;
+      }
+  
+  /*Her starter CSS'en til sektion 1 med forsidebillede + tekst + knapper*/
+  /*Log-ind knappen*/
+  .logind-button {
+    position: absolute;
+    font-family: Helvetica;
+    top: 20px; 
+    right: 130px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 3; /* Sørger for, at den er synlig foran de andre elementer */
+    padding: 5px 0; /* Giver luft imellem teksten og stregen */
+    text-decoration: none; 
+    border-bottom: 2px solid white; 
+    display: inline-block; /* Sørger for, at stregen matcher tekstens bredde */
+  }
+  
+  .logind-button:hover {
+    color: #06113B;
+    border-bottom: 2px solid #06113B;
+  }
+  
+  .section1 {
+    height: 80vh; /* Sektionen fylder 80% af skærmen */
+    display: flex;
+    margin-bottom: 125px;
+  
+  }
+  
+  /* Styling af den blå boks på forside-billedet */
+  .section1-forsideoverlay {
+    width: 50%; /* Overlay fylder 40% af sektionen */
+    background-color: #06113B; /* Blå farve */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    padding-left: 130px; /* Tilføj ekstra afstand til venstre */
+    box-sizing: border-box; /* Sørger for, at padding inkluderes i bredden */
+  }
+  
+  /* Styling af logo */
+  .section1-logo {
+    position: absolute;
+    top: 40px; /* Afstand fra toppen */
+    left: 130px; /* Afstand fra venstre */
+    width: 200px; /* Juster bredden efter behov */
+    height: auto; /* Bevarer proportionerne */
+    z-index: 5; /* Sørger for, at logoet er synligt over andre elementer */
+  }
+  
+  .section1-overskrift {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: montserrat;
+  }
+  
+  .section1-tekst {
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+  }
+  
+  .section1-forsidebillede {
+    width: 50%;
+    position: relative;
+  }
+  
+  .section1-forsidebillede img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Gør forside billedet gennemsigtigt */
+  .section1-forsidebillede::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Hvid overlay med 50% gennemsigtighed */
+  }
+  
+  /* Knapperne på forsidebilledet */
+  .section1-knapper {
+    position: absolute;
+    font-family: Helvetica;
+    bottom: 60px;
+    left: 50%; /* Centrerer knapperne horisontalt */
+    transform: translateX(-58%); /* Flytter knapperne mere mod venstre */
+    display: flex;
+    gap: 15px;
+    z-index: 2; /* Gør at knapperne ligger foran overlayet */
+  }
+  
+  .btn-primaer,
+  .btn-sekunaer {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primaer {
+    background-color: #FF8C32;
+    color: #ffffff;
+  }
+  
+  .btn-primaer:hover {
+    background-color: #ffb451;
+  }
+  
+  .btn-sekunaer {
+    background-color: #06113B;
+    color: #ffffff;
+  }
+  
+  .btn-sekunaer:hover {
+    background-color: #4d61af;
+  }
+  
+  /* Styling af pilen under forsidebilledet */
+  .section1-pil {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px; /* Overlapper lidt med sektion 1 */
+    margin-bottom: 60px;
+  }
+  
+  .section1-pil img {
+    width: 50px;
+    height: auto;
+  }
+  /* Her slutter CSS'en til sektion 1*/ 
+  
