@@ -331,6 +331,7 @@ h2 {
 }
 
 /* ===== Sektion: Bookingformular ===== */
+
 .book-tid-overskrift {
   margin-top: 280px;
   margin-left: 255px;
@@ -339,41 +340,52 @@ h2 {
 
 /* ===== Footer sektion ===== */
 
-.footer {
-  background-color: #06113B;
-  color: #fff;
-  padding: 25px 30px;
-  margin-top: 200px;
-  font-family: Helvetica;
-}
+  footer {
+    background-color:#06113B;
+    color: #eeeeee;
+    padding: 1px;
+    font-family: Helvetica;
+    margin-top: 200px;
+  }
 
-/* Kontakt information */
-.footer-kontakt p {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-.ikon-footer {
-  width: 25px;
-  height: auto;
-  margin-right: 15px;
-}
+  .contact-info p {
+    margin: 25px 0;
+    font-size: 18px;
+    font-family: Helvetica;
+  }
 
-/* Sociale medier */
-.footer-sociale {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .contact-info .icon {
+    padding-right: 50px;
+  }
 
-.sociale-medier img {
-  width: 32px;
-  height: 32px;
-  margin: 0 8px;
-}
+  .social-media a {
+    margin: 0 10px;
+  }
 
-.copyright {
-  margin-top: 10px;
-  text-align: right;
-}
+  .social-media img {
+    width: 40px;
+  }
+
+  .streg {
+    border-bottom: 1px solid #FF8C32;
+    justify-content: center;
+    width: auto;
+    margin: 0px;
+  }
+
+  .footer-bottom {
+
+    font-size: 14px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Helvetica;
+  }
