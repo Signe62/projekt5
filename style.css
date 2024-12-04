@@ -7,6 +7,12 @@ body {
   font-family: Helvetica;
 }
 
+h2 {
+  font-size: 32px;
+  font-family: montserrat;
+  color: #06113B;
+}
+
 /* ===== Forside sektion ===== */
 
 /* Log ind knap */
@@ -173,12 +179,6 @@ body {
   width: 600px;
 }
 
-.overskrift-hvad-er {
-  font-family: montserrat;
-  font-size: 32px;
-  color: #06113B;
-}
-
 .tekst-afsnit {
   font-family: Helvetica;
   font-size: 18px;
@@ -203,7 +203,6 @@ body {
   font-family: montserrat;
   color: #eeeeee;
   text-align: center;
-  font-size: 32px;
 }
 
 .info-afsnit {
@@ -215,17 +214,17 @@ body {
   line-height: 1.5;
 }
 
+.tilbud-overskrift {
+  margin-top: 150px;
+  margin-left: 255px;
+  margin-right: 255px;
+}
+
 /* ===== Sektion: Hvem driver Fablab ===== */
 
 .hvem-driver {
   display: flex;
   flex-direction: column;
-}
-
-.overskrift-hvem {
-  font-family: montserrat;
-  font-size: 32px;
-  color: #06113B;
 }
 
 /* Tekst om medarbejdere */
@@ -269,9 +268,6 @@ body {
 /* ===== Sektion: Feedback ===== */
 
 .feedback-overskrift {
-  font-family: montserrat;
-  font-size: 32px;
-  color: #06113B;
   margin-top: 150px;
   margin-left: 255px;
 }
