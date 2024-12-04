@@ -214,6 +214,8 @@ h2 {
   line-height: 1.5;
 }
 
+/* ===== Sektion: Fablabs tilbud ===== */
+
 .tilbud-overskrift {
   margin-top: 150px;
   margin-left: 255px;
@@ -326,6 +328,13 @@ h2 {
   color: #06113B;
   text-align: center;
   margin-top: -15px;
+}
+
+/* ===== Sektion: Bookingformular ===== */
+.book-tid-overskrift {
+  margin-top: 280px;
+  margin-left: 255px;
+  margin-right: 255px;
 }
 
 /* ===== Footer sektion ===== */
