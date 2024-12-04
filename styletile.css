@@ -198,4 +198,59 @@ body {
   font-size: 18px; 
 }
 /* Her slutter CSS'en til sektion 2*/ 
+
+
+/* Her starter CSS'en til sektion 3 med "Hvem driver Fablab" og de 3 billeder af Michael, Michael og Mads herunder*/
+
+.section3 {
+  display: flex; 
+  flex-direction: column;
+}
+
+.section3-text { /* Overskriften samt brødtekst i sektion 3*/
+  margin-top: 150px;
+  margin-left: 245px;
+}
+
+.section3-headline { /* "Hvem driver Fablab" overskrift*/ 
+  font-family: montserrat; 
+  font-size: 32px; 
+  color: #06113B;
+}
+
+.section3-pictures123 { /* De 3 forskellige billeder af Michael, Michael og Mads*/
+  display: flex; 
+  justify-content: center;
+  gap: 70px;
+  margin-top: 50px;
+}
+
+
+.section3-paragraph { /* Brødteksten som er under "Hvem driver Fablab" overskrift*/
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 18px;
+  line-height: 1.5;
+  color: #06113B;
+}
+
+.section3-picture img { /* Hvert billede af Michael, Michael og Mads*/
+  height: 300px; 
+}
+
+.section3-picture {
+  text-align: center;
+}
+
+.section3-pictureheadline { /* Overskrfiten under hvert billede som er navnet på personen*/
+  font-size: 28px;
+  font-family: montserrat; 
+  color: #06113B; 
+}
+
+.section3-picturetext { /* Hvilken rolle de forskellige personer har som er under navnet*/ 
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #06113B;  
+}
+/* Her slutter CSS'en til sektion 3*/
   
