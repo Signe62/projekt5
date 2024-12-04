@@ -290,7 +290,6 @@ body {
   border-radius: 8px;
 }
 
-/* Trekanten */
 .taleboble::after {
   content: "";
   position: absolute;
@@ -315,7 +314,6 @@ body {
 .feedback-personer {
   display: flex;
   justify-content: center;
-  gap: 120px;
 }
 
 .navn-person {
@@ -323,13 +321,15 @@ body {
   font-family: montserrat;
   color: #06113B;
   text-align: center;
+  padding-top: 30px;
 }
 
 .beskrivelse-person {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   color: #06113B;
   text-align: center;
+  margin-top: -15px;
 }
 
 /* ===== Footer sektion ===== */
@@ -338,7 +338,7 @@ body {
   background-color: #06113B;
   color: #fff;
   padding: 25px 30px;
-  margin-top: 100px;
+  margin-top: 200px;
   font-family: Helvetica;
 }
 
