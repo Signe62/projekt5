@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: montserrat;
+  font-family: Helvetica;
 }
 
 /* ===== Forside sektion ===== */
@@ -180,7 +180,7 @@ body {
 }
 
 .tekst-afsnit {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   font-size: 18px;
   line-height: 1.5;
   color: #06113B;
@@ -207,7 +207,7 @@ body {
 }
 
 .info-afsnit {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   color: #eeeeee;
   margin-left: 37px;
   margin-right: 37px;
@@ -222,22 +222,25 @@ body {
   flex-direction: column;
 }
 
-/* Tekst om medarbejdere */
-.tekst-hvem-driver {
-  margin-top: 150px;
-  margin-left: 245px;
-}
-
 .overskrift-hvem {
   font-family: montserrat;
   font-size: 32px;
   color: #06113B;
 }
 
+/* Tekst om medarbejdere */
+.tekst-hvem-driver {
+  margin-top: 150px;
+  color: #06113B;
+  margin-left: 255px;
+  margin-right: 255px;
+}
+
 /* Medarbejdere liste */
 .medarbejdere {
   display: flex;
   justify-content: center;
+
   gap: 70px;
   margin-top: 50px;
 }
@@ -258,8 +261,9 @@ body {
 
 .rolle-medarbejder {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   color: #06113B;
+  margin-top: -15px;
 }
 
 /* ===== Sektion: Feedback ===== */
