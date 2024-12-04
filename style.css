@@ -1,0 +1,333 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: montserrat;
+}
+
+/* Forside (sektion 1) */
+.logind-knap {
+  position: absolute;
+  font-family: Helvetica;
+  top: 20px;
+  right: 130px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  z-index: 3;
+  padding: 5px 0; 
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  display: inline-block; 
+}
+
+.logind-knap:hover {
+  color: #06113B;
+  border-bottom: 2px solid #06113B;
+}
+
+.forside {
+  height: 80vh;
+  display: flex;
+  margin-bottom: 125px;
+}
+
+.forside-overlay {
+  width: 50%;
+  background-color: #06113B;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  padding-left: 130px;
+  box-sizing: border-box;
+}
+
+.forside-logo {
+  position: absolute;
+  top: 40px; 
+  left: 130px;
+  width: 200px;
+  height: auto;
+  z-index: 5; /* Sørger for, at logoet er synligt over andre elementer */
+}
+
+.forside-overskrift {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: montserrat;
+}
+
+.forside-tekst {
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+}
+
+.forside-billede {
+  width: 50%;
+  position: relative;
+}
+
+.forside-billede img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.forside-billede::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.forside-knapper {
+  position: absolute;
+  font-family: Helvetica;
+  bottom: 60px;
+  left: 50%; 
+  transform: translateX(-58%); 
+  display: flex;
+  gap: 15px;
+  z-index: 2;
+}
+
+.knap-primaer,
+.knap-sekundaer {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.knap-primaer {
+  background-color: #FF8C32;
+  color: #ffffff;
+}
+
+.knap-primaer:hover {
+  background-color: #ffb451;
+}
+
+.knap-sekundaer {
+  background-color: #06113B;
+  color: #ffffff;
+}
+
+.knap-sekundaer:hover {
+  background-color: #4d61af;
+}
+
+.forside-pil {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+  margin-bottom: 60px;
+}
+
+.forside-pil img {
+  width: 50px;
+  height: auto;
+}
+
+/* Hvad er Fablab (sektion 2) */
+.hvad-er-fablab {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
+.fablab-tekst {
+  width: 600px;
+}
+
+.overskrift-hvad-er {
+  font-family: montserrat;
+  font-size: 32px;
+  color: #06113B;
+}
+
+.tekst-afsnit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #06113B;
+}
+
+.fablab-info {
+  background-color: #06113B;
+  height: 450px;
+  width: 270px;
+  margin-top: 90px;
+  border-radius: 7px;
+}
+
+.info-boks {
+  margin-top: 40px;
+}
+
+.overskrift-info {
+  font-family: montserrat;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 32px;
+}
+
+.info-afsnit {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eeeeee;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+/* Hvem driver Fablab (sektion 3) */
+.hvem-driver {
+  display: flex;
+  flex-direction: column;
+}
+
+.tekst-hvem-driver {
+  margin-top: 150px;
+  margin-left: 245px;
+}
+
+.overskrift-hvem {
+  font-family: montserrat;
+  font-size: 32px;
+  color: #06113B;
+}
+
+.medarbejdere {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 50px;
+}
+
+.medarbejder img {
+  height: 300px;
+}
+
+.medarbejder {
+  text-align: center;
+}
+
+.navn-medarbejder {
+  font-size: 28px;
+  font-family: montserrat;
+  color: #06113B;
+}
+
+.rolle-medarbejder {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #06113B;
+}
+
+/* Hvad siger vores studerende (sektion 4) */
+.feedback-overskrift {
+  font-family: montserrat;
+  font-size: 32px;
+  color: #06113B;
+  margin-top: 150px;
+  margin-left: 245px;
+}
+
+.feedback-talebobler {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.taleboble {
+  position: relative;
+  background-color: #06113B;
+  height: 230px;
+  width: 230px;
+  border-radius: 7px;
+}
+
+.taleboble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 100px;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #06113B transparent transparent transparent;
+}
+
+.tekst-taleboble {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #eeeeee;
+  width: 200px;
+  line-height: 1.5;
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.feedback-personer {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.navn-person {
+  font-size: 28px;
+  font-family: montserrat;
+  color: #06113B;
+  text-align: center;
+}
+
+.beskrivelse-person {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #06113B;
+  text-align: center;
+}
+
+/* Footer (sektion 5) */
+.footer {
+  background-color: #06113B;
+  color: #fff;
+  padding: 25px 30px;
+  margin-top: 100px;
+  font-family: Helvetica;
+}
+
+.footer-kontakt p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ikon-footer {
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.footer-sociale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sociale-medier img {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: right;
+}
