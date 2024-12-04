@@ -144,4 +144,58 @@ body {
     height: auto;
   }
   /* Her slutter CSS'en til sektion 1*/ 
+
+
+  /*Her starter CSS'en til sektion 2 med "Hvad er Fablab" overskrift og den blå boks ved siden af*/
+
+.section2 { /* Den sektion med "Hvad er Fablab" og med den blå boks ved siden af med informationer*/
+  display: flex; 
+  justify-content: center;
+  gap: 130px;    
+}
+
+.fablab-paragraph {  /*Hele det tekststykke som inderholder "Hvad er Fablab" og teksten herunder*/
+  width: 600px; 
+}
+
+.section2-headline { /* "Hvad er Fablab" overskrift*/
+  font-family: montserrat; 
+  font-size: 32px; 
+  color: #06113B; 
+}
+
+.section2-paragraph { /* Alt teksten som er under "Hvad er Fablab"*/
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 18px;
+  line-height: 1.5;
+  color: #06113B; 
+}
+
+.section2-box { /* Den blå boks som indeholder informationer*/
+  background-color: #06113B; 
+  height: 450px;
+  width: 270px;
+  margin-top: 90px;
+  border-radius: 7px;
+}
+
+.section2-boxtext { /* Alt teksten som er inde i den blå boks*/ 
+  margin-top: 40px;
+}
+
+.section2-boxheadline { /* "Information" overskrift i den blå boks*/
+  font-family: montserrat;
+  color: #eeeeee;  
+  text-align: center; 
+  font-size: 32px;
+}
+
+
+.section2-boxparagraph { /* Teksten som er under "information" i den blå boks*/
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #eeeeee; 
+  margin-left: 40px;
+  font-size: 18px; 
+}
+/* Her slutter CSS'en til sektion 2*/ 
   
