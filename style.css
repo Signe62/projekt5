@@ -151,12 +151,12 @@ body {
 .forside-pil {
   display: flex;
   justify-content: center;
-  margin-top: -80px;
-  margin-bottom: 60px;
+  margin-top: -85px;
+  margin-bottom: 90px;
 }
 
 .forside-pil img {
-  width: 50px;
+  width: 45px;
   height: auto;
 }
 
