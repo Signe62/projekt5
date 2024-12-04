@@ -1,12 +1,15 @@
+/* Global styling */
 body {
-  background-color: #eeeeee;
+  background-color: #eeeeee; /* Baggrundsfarven på hele hjemmesiden */
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: montserrat;
+  font-family: montserrat; /* Global skrifttype */
 }
 
-/* Forside (sektion 1) */
+/* ===== Forside sektion ===== */
+
+/* Log ind knap */
 .logind-knap {
   position: absolute;
   font-family: Helvetica;
@@ -16,45 +19,49 @@ body {
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
-  z-index: 3;
-  padding: 5px 0; 
+  z-index: 3; /* Sørger for, at den ligger øverst */
+  padding: 5px 0;
   text-decoration: none;
   border-bottom: 2px solid white;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .logind-knap:hover {
-  color: #06113B;
+  color: #06113B; /* Hover farve */
   border-bottom: 2px solid #06113B;
 }
 
+/* Forside container */
 .forside {
-  height: 80vh;
+  height: 80vh; /* Højde på sektionen */
   display: flex;
-  margin-bottom: 125px;
+  margin-bottom: 125px; /* Afstand til næste sektion */
 }
 
+/* Overlay på forsiden */
 .forside-overlay {
-  width: 50%;
-  background-color: #06113B;
+  width: 50%; /* Fylder halvdelen af bredden */
+  background-color: #06113B; /* Blå baggrund */
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px;
   padding-left: 130px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Inkluder padding i bredden */
 }
 
+/* Logo i overlay */
 .forside-logo {
   position: absolute;
-  top: 40px; 
+  top: 40px;
   left: 130px;
-  width: 200px;
-  height: auto;
-  z-index: 5; /* Sørger for, at logoet er synligt over andre elementer */
+  width: 200px; /* Logoets bredde */
+  height: auto; /* Bevarer proportioner */
+  z-index: 5; /* Sørger for, at logoet er synligt */
 }
 
+/* Overskrift og tekst i overlay */
 .forside-overskrift {
   font-size: 42px;
   margin-bottom: 20px;
@@ -67,33 +74,36 @@ body {
   font-family: Helvetica;
 }
 
+/* Forside billede */
 .forside-billede {
-  width: 50%;
+  width: 50%; /* Fylder halvdelen af bredden */
   position: relative;
 }
 
 .forside-billede img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Bevarer proportioner */
 }
 
+/* Overlay på billede */
 .forside-billede::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5); /* Hvid overlay med gennemsigtighed */
 }
 
+/* Knapper på forsiden */
 .forside-knapper {
   position: absolute;
   font-family: Helvetica;
   bottom: 60px;
-  left: 50%; 
-  transform: translateX(-58%); 
+  left: 50%;
+  transform: translateX(-58%);
   display: flex;
-  gap: 15px;
+  gap: 15px; /* Afstand mellem knapper */
   z-index: 2;
 }
 
@@ -107,6 +117,7 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Primær knap styling */
 .knap-primaer {
   background-color: #FF8C32;
   color: #ffffff;
@@ -116,6 +127,7 @@ body {
   background-color: #ffb451;
 }
 
+/* Sekundær knap styling */
 .knap-sekundaer {
   background-color: #06113B;
   color: #ffffff;
@@ -125,6 +137,7 @@ body {
   background-color: #4d61af;
 }
 
+/* Pil under forsiden */
 .forside-pil {
   display: flex;
   justify-content: center;
@@ -137,13 +150,15 @@ body {
   height: auto;
 }
 
-/* Hvad er Fablab (sektion 2) */
+/* ===== Sektion: Hvad er Fablab ===== */
+
 .hvad-er-fablab {
   display: flex;
   justify-content: center;
-  gap: 130px;
+  gap: 130px; /* Afstand mellem tekst og info-boks */
 }
 
+/* Tekst om Fablab */
 .fablab-tekst {
   width: 600px;
 }
@@ -161,6 +176,7 @@ body {
   color: #06113B;
 }
 
+/* Info-boks */
 .fablab-info {
   background-color: #06113B;
   height: 450px;
@@ -187,12 +203,14 @@ body {
   font-size: 18px;
 }
 
-/* Hvem driver Fablab (sektion 3) */
+/* ===== Sektion: Hvem driver Fablab ===== */
+
 .hvem-driver {
   display: flex;
   flex-direction: column;
 }
 
+/* Tekst om medarbejdere */
 .tekst-hvem-driver {
   margin-top: 150px;
   margin-left: 245px;
@@ -204,10 +222,11 @@ body {
   color: #06113B;
 }
 
+/* Medarbejdere liste */
 .medarbejdere {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 70px; /* Afstand mellem medarbejdere */
   margin-top: 50px;
 }
 
@@ -231,7 +250,8 @@ body {
   color: #06113B;
 }
 
-/* Hvad siger vores studerende (sektion 4) */
+/* ===== Sektion: Feedback ===== */
+
 .feedback-overskrift {
   font-family: montserrat;
   font-size: 32px;
@@ -254,16 +274,6 @@ body {
   border-radius: 7px;
 }
 
-.taleboble::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 100px;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #06113B transparent transparent transparent;
-}
-
 .tekst-taleboble {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -274,6 +284,7 @@ body {
   padding-top: 15px;
 }
 
+/* Feedback personer */
 .feedback-personer {
   display: flex;
   justify-content: center;
@@ -294,7 +305,8 @@ body {
   text-align: center;
 }
 
-/* Footer (sektion 5) */
+/* ===== Footer sektion ===== */
+
 .footer {
   background-color: #06113B;
   color: #fff;
@@ -303,6 +315,7 @@ body {
   font-family: Helvetica;
 }
 
+/* Kontakt information */
 .footer-kontakt p {
   display: flex;
   align-items: center;
@@ -315,6 +328,7 @@ body {
   margin-right: 15px;
 }
 
+/* Sociale medier */
 .footer-sociale {
   display: flex;
   justify-content: space-between;
