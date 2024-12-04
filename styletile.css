@@ -253,4 +253,72 @@ body {
   color: #06113B;  
 }
 /* Her slutter CSS'en til sektion 3*/
+
+/* Her starter CSS'en til sektion 4 med "Hvad siger vores studerende" med de blå talebokse under*/ 
+
+.section4-headline { /* "Hvad siger vores studerende" overskrift*/ 
+  font-family: montserrat; 
+  font-size: 32px; 
+  color: #06113B; 
+  margin-top: 150px;
+  margin-left: 245px;
+}
+
+.section4-speechbubble1234 { /* Alle taleboblerne så de står på række*/
+  display: flex; 
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Taleboblen */
+.section4-speechbubble {
+  position: relative; /* Nødvendigt for at trekanten kan placeres korrekt */
+  background-color: #06113B; /* Baggrundsfarve for taleboblen */
+  height: 230px;
+  width: 230px; /* Tilpas efter behov */
+  border-radius: 7px; /* Runde hjørner */  
+}
+
+/* Trekanten */
+.section4-speechbubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Placering under boksen */
+  left: 100px; /* Justér for at placere trekanten hvor du vil */
+  border-style: solid;
+  border-width: 10px 10px 0 10px; /* Danner en trekant */
+  border-color: #06113B transparent transparent transparent; /* Match taleboblens baggrundsfarve */
+}
+
+
+.speechbubble-text { /* Teksten som er inde i hver talebobble*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #eeeeee; 
+  width: 200px;
+  line-height: 1.5; 
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.section4-text1234 {
+  display: flex; 
+  justify-content: center; 
+  gap: 120px;
+}
+
+.section4-pictureheadline { /* Overskrfiten under hvert billede som er navnet på personen*/
+  font-size: 28px;
+  font-family: montserrat; 
+  color: #06113B; 
+  text-align: center;
+}
+
+.section4-picturetext { /* Hvilken rolle de forskellige personer har som er under navnet*/ 
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #06113B;  
+  text-align: center;
+}
+/* Her slutter CSS'en til sektion 4*/
   
