@@ -1,10 +1,10 @@
 /* Global styling */
 body {
-  background-color: #eeeeee; /* Baggrundsfarven på hele hjemmesiden */
+  background-color: #eeeeee;
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: montserrat; /* Global skrifttype */
+  font-family: montserrat;
 }
 
 /* ===== Forside sektion ===== */
@@ -19,7 +19,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
-  z-index: 3; /* Sørger for, at den ligger øverst */
+  z-index: 3;
   padding: 5px 0;
   text-decoration: none;
   border-bottom: 2px solid white;
@@ -27,28 +27,28 @@ body {
 }
 
 .logind-knap:hover {
-  color: #06113B; /* Hover farve */
+  color: #06113B;
   border-bottom: 2px solid #06113B;
 }
 
 /* Forside container */
 .forside {
-  height: 80vh; /* Højde på sektionen */
+  height: 80vh;
   display: flex;
-  margin-bottom: 125px; /* Afstand til næste sektion */
+  margin-bottom: 125px;
 }
 
 /* Overlay på forsiden */
 .forside-overlay {
-  width: 50%; /* Fylder halvdelen af bredden */
-  background-color: #06113B; /* Blå baggrund */
+  width: 50%;
+  background-color: #06113B;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 40px;
   padding-left: 130px;
-  box-sizing: border-box; /* Inkluder padding i bredden */
+  box-sizing: border-box;
 }
 
 /* Logo i overlay */
@@ -56,9 +56,9 @@ body {
   position: absolute;
   top: 40px;
   left: 130px;
-  width: 200px; /* Logoets bredde */
-  height: auto; /* Bevarer proportioner */
-  z-index: 5; /* Sørger for, at logoet er synligt */
+  width: 200px; 
+  height: auto; 
+  z-index: 5;
 }
 
 /* Overskrift og tekst i overlay */
@@ -76,14 +76,14 @@ body {
 
 /* Forside billede */
 .forside-billede {
-  width: 50%; /* Fylder halvdelen af bredden */
+  width: 50%;
   position: relative;
 }
 
 .forside-billede img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Bevarer proportioner */
+  object-fit: cover;
 }
 
 /* Overlay på billede */
@@ -92,7 +92,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* Hvid overlay med gennemsigtighed */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Knapper på forsiden */
@@ -103,7 +103,7 @@ body {
   left: 50%;
   transform: translateX(-58%);
   display: flex;
-  gap: 15px; /* Afstand mellem knapper */
+  gap: 15px;
   z-index: 2;
 }
 
@@ -155,7 +155,7 @@ body {
 .hvad-er-fablab {
   display: flex;
   justify-content: center;
-  gap: 130px; /* Afstand mellem tekst og info-boks */
+  gap: 130px;
 }
 
 /* Tekst om Fablab */
@@ -226,7 +226,7 @@ body {
 .medarbejdere {
   display: flex;
   justify-content: center;
-  gap: 70px; /* Afstand mellem medarbejdere */
+  gap: 70px;
   margin-top: 50px;
 }
 
