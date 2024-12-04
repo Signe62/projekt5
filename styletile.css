@@ -166,18 +166,23 @@ body {
   }
 }
 
-.section1-arrow {
+.section1-pil {
   display: flex;
-  justify-content: center; /* Centrerer pilen */
-  margin-top: -80px; /* Overlapper lidt med sektion 1 */
-  margin-bottom: 60px; /* Tilføj ekstra afstand til den næste sektion */
+  justify-content: center; /* Centrerer pilen horisontalt */
+  align-items: center; /* Centrerer eventuelt vertikalt, hvis det er nødvendigt */
+  position: absolute; /* Gør det muligt at placere pilen i forhold til sektionen */
+  bottom: 90px; /* Flytter pilen længere op fra bunden */
+  left: 50%; /* Flytter pilen til midten horisontalt */
+  transform: translateX(-50%); /* Justerer for, at pilens venstre kant flugter */
+  z-index: 2; /* Sørger for, at pilen ligger foran andre elementer */
 }
 
-.section1-arrow img {
+.section1-pil img {
   width: 50px; /* Justér pilens størrelse */
   height: auto;
 }
-  /*Her slutter sektion 1*/
+
+
 
 
 
