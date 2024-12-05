@@ -525,41 +525,42 @@ h2 {
   }
 
   .footer-container {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      margin: 0px;
-      padding: 30px;
+    display: flex; /* Placerer kontaktinfo og sociale medier horisontalt */
+    flex-direction: row; /* Sørger for, at elementerne er på samme linje */
+    justify-content: space-between; /* Laver mellemrum mellem kontaktinfo og sociale medier */
+    align-items: flex-start; /* Justerer elementerne, så de flugter øverst */
+    margin: 0;
+    padding: 30px;
+}
+
+.kontakt-info {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.kontakt-info p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.kontakt-info img {
+    width: 20px; 
+    height: auto;
+    margin-right: -15px;
+}
+
+.sociale-medier {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px;
+}
+
+  .sociale-medier img {
+    width: 30px;
   }
 
-  
-  .kontakt-info {
-      display: flex;
-      flex-direction: column; 
-      align-items: flex-start;
-      gap: 20px;
-  }
-  
-  .kontakt-info p {
-      font-size: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 5px 0;
-  }
-  
-  .kontakt-info img {
-      width: 20px; 
-      height: auto;
-  }
-  
-  .sociale-medier {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      padding-top: 20px;
-  }
-          
   .copyright {
       font-size: 14px;
   }
