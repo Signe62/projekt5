@@ -235,15 +235,15 @@ h2 {
   color: #06113B;
   margin-left: 255px;
   margin-right: 255px;
+  line-height: 1.5;
 }
 
 /* Medarbejdere liste */
 .medarbejdere {
   display: flex;
   justify-content: center;
-
   gap: 70px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .medarbejder img {
@@ -258,6 +258,7 @@ h2 {
   font-size: 28px;
   font-family: montserrat;
   color: #06113B;
+  margin-top: 15px;
 }
 
 .rolle-medarbejder {
@@ -446,6 +447,7 @@ h2 {
   .knap-primaer {
       font-size: 16px;
       padding: 12px 26px;
+      border-radius: 8px;
   }
 
   .knap-sekundaer {
@@ -466,7 +468,8 @@ h2 {
   }
 
   .fablab-info {
-      margin: 0px;
+      margin-top: 10px;
+      padding-right: 20px;
   }
 
   .fablab-tekst {
@@ -477,14 +480,35 @@ h2 {
       margin: 0px;
       padding-left: 30px;
       padding-right: 30px;
-      padding-top: 30px;
+      padding-top: 80px;
   }
 
   .tekst-hvem-driver {
       padding-left: 30px;
       padding-right: 30px;
+      padding-top: 80px;
       margin: auto;
   }
+
+  .medarbejdere {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 30px;
+}
+
+.navn-medarbejder {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.rolle-medarbejder {
+  font-size: 18px;
+  font-family: Helvetica;
+  color: #06113B;
+  margin-top: 10px;
+}
 
   .feedback-overskrift {
       padding-left: 30px;
@@ -492,20 +516,29 @@ h2 {
       font-size: 32px;
       padding-top: 30px;
       padding-bottom: 30px;
+      padding-top: 80px;
   }
 
   .feedback-talebobler {
-      gap: 135px;
+      gap: 130px;
       flex-direction: column;
       align-items: center;
   }
 
-  .medarbejdere {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin: 0;
-      padding: 30px;
+  .feedback-personer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navn-person {
+    font-family: montserrat;
+    color: #06113B;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .beskrivelse-person {
+    margin-top: -20px;
   }
 
   .book-tid-overskrift {
