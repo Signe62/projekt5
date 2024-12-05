@@ -21,20 +21,20 @@ h2 {
   font-family: Helvetica;
   top: 45px;
   right: 100px;
-  color: white;
+  color: #eeeeee;
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
   z-index: 3;
   padding: 2px 0;
   text-decoration: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #eeeeee;
   display: inline-block;
 }
 
 .logind-knap:hover {
-  color: #06113B;
-  border-bottom: 2px solid #06113B;
+  color: #3B4A85;
+  border-bottom: 2px solid #3B4A85;
 }
 
 /* Forside container */
@@ -136,7 +136,7 @@ h2 {
 /* Primær knap styling */
 .knap-primaer {
   background-color: #FF8C32;
-  color: #ffffff;
+  color: #eeeeee;
 }
 
 .knap-primaer:hover {
@@ -146,11 +146,11 @@ h2 {
 /* Sekundær knap styling */
 .knap-sekundaer {
   background-color: #06113B;
-  color: #ffffff;
+  color: #eeeeee;
 }
 
 .knap-sekundaer:hover {
-  background-color: #4d61af;
+  background-color: #3B4A85;
 }
 
 /* Pil under forsiden */
