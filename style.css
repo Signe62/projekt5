@@ -562,3 +562,63 @@ h2 {
   }
 }
 
+
+/* Media query for iPad (1024px bredde) */
+@media (max-width: 1024px) {
+
+  /* Log ind knap */
+  .logind-knap {
+    top: 30px;
+    right: 50px;
+    font-size: 18px;
+  }
+
+  /* Forside overlay */
+  .forside-overlay {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Forside billede */
+  .forside-billede {
+    display: none;
+  }
+
+  /* Forside knapper */
+  .forside-knapper {
+    bottom: 50px;
+    left: 30%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Hvad er Fablab sektion */
+  .hvad-er-fablab {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .fablab-tekst {
+    width: 90%;
+  }
+
+  .fablab-info {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Medarbejdere sektion */
+  .medarbejdere {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .medarbejder img {
+    height: 200px;
+  }
+
+}
+
