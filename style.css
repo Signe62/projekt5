@@ -438,12 +438,14 @@ h2 {
   }
 
   .forside-knapper {
-      left: 125px;
-      bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(25px);
   }
 
   .knap-primaer {
       font-size: 16px;
+      padding: 12px 26px;
   }
 
   .knap-sekundaer {
