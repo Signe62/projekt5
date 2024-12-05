@@ -368,13 +368,13 @@ h2 {
     padding-right: 30px;
   }
 
-  .social-media {
+  .sociale-medier {
     display: flex;
-    gap: 20px; /* Afstand mellem ikonerne */
+    gap: 20px;
     padding-top: 100px;
   }
 
-  .social-media img {
+  .sociale-medier img {
     width: 40px;
   }
 
