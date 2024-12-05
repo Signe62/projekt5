@@ -393,4 +393,167 @@ h2 {
   }
 
 
+
+  /* === Media Queries === */
+
+/* Mobiltelefoner (max-width: 600px) */
+@media (max-width: 600px) {
+  .forside {
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 30px;
+  }
+
+  .logind-knap {
+      right: 30px;
+      top: 30px;
+      font-size: 16px;
+  }
+
+  .forside-overlay {
+      width: auto;
+      padding: 30px;
+      text-align: left;
+  }
+
+  .forside-logo {
+      top: 30px;
+      left: 30px;
+      width: 95px;
+  }
+
+  .forside-overskrift {
+      margin-top: 80px;
+      font-size: 32px;
+  }
+
+  .forside-billede {
+      width: auto;
+      display: flex;
+      height: 150px;
+  }
+
+  .forside-tekst {
+      font-size: 18px;
+  }
+
+  .forside-knapper {
+      left: 125px;
+      bottom: 50px;
+  }
+
+  .knap-primaer {
+      font-size: 16px;
+  }
+
+  .knap-sekundaer {
+      display: none;
+  }
+
+  .forside-pil {
+      display: none;
+  }
+
+  .hvad-er-fablab {
+      flex-direction: column;
+      text-align: left;
+      padding-left: 30px;
+      padding-right: 30px;
+      gap: 0px;
+      margin-top: 0px;
+  }
+
+  .fablab-info {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0px;
+  }
+
+  .fablab-tekst {
+      width: auto;
+  }
+
+  .tilbud-overskrift {
+      margin: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 30px;
+  }
+
+  .tekst-hvem-driver {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: auto;
+  }
+
+  .feedback-overskrift {
+      padding-left: 30px;
+      margin: auto;
+      font-size: 32px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+
+  .feedback-talebobler {
+      gap: 135px;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .medarbejdere {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin: 0;
+      padding: 30px;
+  }
+
+  .book-tid-overskrift {
+      margin: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 150px;
+  }
+
+  .feedback-talebobler {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-container {
+      display: flex;
+      flex-direction: column;
+  }
   
+  .kontakt-info {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start;
+      gap: 20px;
+  }
+  
+  .kontakt-info p {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+  }
+  
+  .kontakt-info img {
+      width: 20px; 
+      height: auto;
+  }
+  
+  .sociale-medier {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-top: 20px;
+  }
+          
+  .copyright {
+      font-size: 14px;
+  }
+}
+
