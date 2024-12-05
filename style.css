@@ -357,13 +357,13 @@ h2 {
     margin-right: 100px;
   }
 
-  .contact-info p {
+  .kontakt-info p {
     margin: 25px 0;
     font-size: 18px;
     font-family: Helvetica;
   }
 
-  .contact-info .icon {
+  .kontakt-info img {
     padding-right: 50px;
   }
 
@@ -382,8 +382,7 @@ h2 {
     margin: 0px;
   }
 
-  .footer-bottom {
-
+  .copyright {
     font-size: 14px;
     text-align: center;
     font-size: 18px;
