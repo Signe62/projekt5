@@ -583,10 +583,10 @@ h2 {
   }
 
   .footer-container {
-    display: flex; /* Placerer kontaktinfo og sociale medier horisontalt */
-    flex-direction: row; /* Sørger for, at elementerne er på samme linje */
-    justify-content: space-between; /* Laver mellemrum mellem kontaktinfo og sociale medier */
-    align-items: flex-start; /* Justerer elementerne, så de flugter øverst */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
     margin: 0;
     padding: 30px;
 }
