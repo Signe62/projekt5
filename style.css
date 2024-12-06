@@ -85,8 +85,12 @@ h2 {
 
 /* Forside billede */
 .forside-billede {
+  background-image: url("img/forsidebillede.jpeg");
   width: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
 }
 
 .forside-billede img {
@@ -106,13 +110,14 @@ h2 {
 
 /* Knapper på forsiden */
 .forside-knapper {
-  position: absolute;
+  width: 100%;
   font-family: Helvetica;
-  bottom: 80px;
   left: 40%;
   display: flex;
   gap: 30px;
   z-index: 2;
+  justify-content: center;
+  margin-bottom: 300px;
 }
 
 .knap-primaer {
@@ -241,6 +246,7 @@ h2 {
 /* Medarbejdere liste */
 .medarbejdere {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
   margin-top: 30px;
@@ -279,6 +285,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 27px;
+  flex-wrap: wrap;
 }
 
 .taleboble {
@@ -439,6 +446,7 @@ h2 {
   }
 
   .forside-knapper {
+    margin-bottom: 80px;
     justify-content: center;
     align-items: center;
     transform: translateY(25px);
