@@ -50,6 +50,7 @@
 
   <!-- Sektion: Hvad er Fablab -->
   <section class="hvad-er-fablab">
+    <!-- Tekst om Fablab -->
     <div class="fablab-tekst"> 
       <h2 class="overskrift-hvad-er">Hvad er Fablab?</h2>
       <p class="tekst-afsnit">Fablab er et kreativt uddannelses- og prototypeværksted, hvor du kan eksperimentere, lære og omsætte idéer til prototyper og produkter ved hjælp af diverse maskiner. Som studerende lærer du gennem praktisk skabelse, samtidig med at du opnår viden om teknologier, materialer og designprocesser.</p>
@@ -58,6 +59,7 @@
       <p class="tekst-afsnit"><b>Pris</b><br> Opgaver er gratis og har altid fortrinsret. For private opgaver opkræves en mindre betaling for materialer.</p>
     </div>
 
+    <!-- Information om Fablab -->
     <aside class="fablab-info"> 
       <div class="info-boks"> 
         <h2 class="overskrift-info">Information</h2>  
@@ -72,43 +74,17 @@
   <!-- Sektion: Fablabs tilbud -->
   <section class="fablabs-tilbud">
     <h2 class="tilbud-overskrift">Fablabs tilbud</h2>
-
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-      <div class="billede-slideshow">
-        <button class="forrige" onclick="skiftBillede(-1)">&#10094;</button>
-        <div class="billede-container">
-          <img src="img/billede1.png" alt="3D Print">
-          <div class="tekst-overlay">
-            <h2>3D Print</h2>
-            <p>3D print kan bruges til at skabe fysiske objekter fra digitale modeller, fx prototyper, reservedele eller personlige projekter.</p>
-          </div>
-        </div>
-        <div class="billede-container">
-          <img src="img/billede2.png" alt="Laser-skæring">
-          <div class="tekst-overlay">
-            <h2>Laser-skæring</h2>
-            <p>Laser-skæring kan bruges til at skære eller gravere materialer som træ, akryl og metal ud fra digitale designs.</p>
-          </div>
-        </div>
-        <button class="naeste" onclick="skiftBillede(1)">&#10095;</button>
-      </div>
-    </div>
-
-    <!-- Prikker under slideshowet -->
-    <div class="prik-container">
-      <span class="prik" onclick="visBillede(1)"></span>
-      <span class="prik" onclick="visBillede(2)"></span>
-    </div>
   </section>
 
   <!-- Sektion: Hvem driver Fablab -->
   <section class="hvem-driver">
+    <!-- Tekst om medarbejdere -->
     <div class="tekst-hvem-driver"> 
       <h2 class="overskrift-hvem">Hvem driver Fablab?</h2>
       <p class="beskrivelse-hvem">Fablab er altid bemandet af vores dygtige medarbejdere, der er klar til at hjælpe dig med at omsætte dine ideer og tanker til noget visuelt.</p> 
     </div>
 
+    <!-- Liste over medarbejdere -->
     <div class="medarbejdere">
       <div class="medarbejder">
         <img src="img/michael1.jpg" alt="Michael Angelo">
@@ -132,16 +108,51 @@
   <section class="feedback">
     <h2 class="feedback-overskrift">Hvad siger vores studerende?</h2>
 
+    <!-- Liste over feedback -->
     <div class="feedback-talebobler">
       <div class="taleboble">
         <p class="tekst-taleboble">“Fablab hjalp mig med at forstå laser-skæreren, og jeg endte med at lave en flot og detaljeret udskæring.”</p>
         <div class="feedback-personer">
-          <h3 class="navn-person">Andreas</h3>
-          <p class="beskrivelse-person">Multimediedesigner</p>
+          <div>
+            <h3 class="navn-person">Andreas</h3>
+            <p class="beskrivelse-person">Multimediedesigner</p>
+          </div>
+        </div>
+      </div>
+      <div class="taleboble">
+        <p class="tekst-taleboble">"Med vejledende hjælp fra FabLab lærte jeg at bruge t-shirt-printeren og fik skabt mit helt eget unikke design!"</p>
+        <div class="feedback-personer">
+          <div>
+            <h3 class="navn-person">Mette</h3>
+            <p class="beskrivelse-person">Lærer</p>
+          </div>
+        </div>
+      </div>
+      <div class="taleboble">
+        <p class="tekst-taleboble">"Medarbejderne i Fablab er altid super hjælpsomme og imødekommende. Jeg nyder at arbejde dernede gang på gang."</p>
+        <div class="feedback-personer">
+          <div>
+            <h3 class="navn-person">Lasse</h3>
+            <p class="beskrivelse-person">Bygningskonstruktør</p>
+          </div>
+        </div>
+      </div>
+      <div class="taleboble">
+        <p class="tekst-taleboble">"Min gruppe og jeg fik fantastisk vejledning til at bruge 3D-printeren i FabLab. Vores projekt blev præcist, som vi ønskede det!"</p>
+        <div class="feedback-personer">
+          <div>
+            <h3 class="navn-person">Klara</h3>
+            <p class="beskrivelse-person">Ergoterapeut</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Sektion: Bookingformular (Skal først bruges på 2. side efter log ind) -->
+  <!-- <section class="booking">
+    <h2 class="book-tid-overskrift">Book tid</h2>
+  </section> -->
 
 </main>
 
@@ -168,6 +179,5 @@
   </div>
 </footer>
 
-<script src="slideshow.js"></script>
 </body>
 </html>
