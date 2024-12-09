@@ -11,6 +11,7 @@
   <!-- Link til stylesheet -->
   <link rel="stylesheet" href="style.css">
   <script src="slideshow.js" defer></script>
+  <script src="DisplayVisibility.js" defer></script>
 
 </head>
 <body>
@@ -21,37 +22,38 @@
 
     <div class="soegefunktion">
       <input type="text" id="soegefelt" class="soegefelt" placeholder="Skriv dit søgeord her...">
-      <button onclick="search()" class="soegeknap">Søg</button>  
-      <a href="#" class="logind-knap">Log ind</a>
+      <button onclick="search()" class="soegeknap">Søg</button>
+      <button id="minebookinger-knap">Mine bookinger</button>
+      <a onclick="logInOrOut(event)" id="logind-knap">Log ind</a>
     </div>
   </div>
       
   <!-- Overlay med tekst -->
   <div class="forside-overlay">
     <img src="img/fablab_logo.png" alt="Fablab logo" class="forside-logo">
-    <h1 class="forside-overskrift">Velkommen til Fablab</h1>
+    <h1 id="forside-overskrift">Velkommen til Fablab</h1>
     <p class="forside-tekst">Træd indenfor i UCL's kreative prototypeværksted og få hjælp til at visualisere dine ideer i træ, plastik, på stof eller i elektronisk form.</p>
   </div>
 
   <!-- Forside billede -->
   <div class="forside-billede">
     <div class="forside-knapper">
-      <a href="#" class="knap-primaer">Book tid</a>
-      <a href="#" class="knap-sekundaer">Læs mere</a>
+      <a class="knap-primaer" onclick="bookTid(event)">Book tid</a>
+      <a href="#hvad-er-fablab" class="knap-sekundaer">Læs mere</a>
     </div>
   </div>
 </header>
 
-<!-- Pil under forside -->
-<div class="forside-pil">
-  <img src="img/pil.png" alt="Ned-pil">
-</div>
-
 <!-- Main sektion -->
 <main>
 
+  <!-- Pil under forside -->
+  <a class="forside-pil" href="#hvad-er-fablab">
+    <img src="img/pil.png" alt="Ned-pil">
+  </a>
+
   <!-- Sektion: Hvad er Fablab -->
-  <section class="hvad-er-fablab">
+  <section id="hvad-er-fablab" class="hvad-er-fablab">
     <div class="fablab-tekst"> 
       <h2 class="overskrift-hvad-er">Hvad er Fablab?</h2>
       <p class="tekst-afsnit">Fablab er et kreativt uddannelses- og prototypeværksted, hvor du kan eksperimentere, lære og omsætte idéer til prototyper og produkter ved hjælp af diverse maskiner. Som studerende lærer du gennem praktisk skabelse, samtidig med at du opnår viden om teknologier, materialer og designprocesser.</p>

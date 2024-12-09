@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCL Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-color: #005460;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 50px);
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .login-box {
+            background: white;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .login-box img {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-box button {
+            background-color: #005460;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #003d4a;
+        }
+    </style>
+
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>UCL Erhvervsakademi og Professionshøjskole</h1>
+    </div>
+
+    <div class="content">
+        <p>This Identity Provider needs to validate your identity. Please login to your existing account here so that we can return verification back to your local service.</p>
+        <div class="login-box">
+            <img src="https://via.placeholder.com/120" alt="Logo">
+            <form>
+                <input id="login-username" type="text" placeholder="Username" required>
+                <input id="login-password" type="password" placeholder="Password" required>
+                <label id="validation-text"></label>
+                <button type="submit" onclick="logIn(event)">Sign in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
