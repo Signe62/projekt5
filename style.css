@@ -257,8 +257,6 @@ h2 {
   margin-right: 255px;
 }
 
-<<<<<<< HEAD
-=======
 
 /* ===== Sektion: Fablabs tilbud ===== */
 .tilbud-overskrift {
@@ -271,15 +269,10 @@ h2 {
   text-align: left;
 }
 
->>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
 /* ===== Slideshow start ===== */
 .slideshow-container {
   margin: auto;
   overflow: hidden;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
 }
 
 .billede-slideshow {
@@ -325,12 +318,6 @@ h2 {
 
 /* Styling af pilene */
 button {
-<<<<<<< HEAD
-  position: relative;
-  bottom: -300px;
-  transform: translateY(-50%);
-=======
->>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
   background: none;
   color: rgb(6, 17, 59);
   border: none;
@@ -352,12 +339,8 @@ button:hover {
   color: #bbbbbb;
   transition: all 0.2s ease;
 }
-<<<<<<< HEAD
-.button-container{
-=======
 
 .button-container {
->>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
   display: none;
 }
 
@@ -387,83 +370,6 @@ button:hover {
 }
 /* ===== Slideshow slut ===== */
 
-<<<<<<< HEAD
-/* ===== Media queries på slideshow ===== */
-
-@media (max-width: 768px) {
-  .billede-slideshow {
-      display: flex; /* Aktivér flex for layout */
-      flex-direction: column; /* Skift til vertikal retning */
-      align-items: center; /* Centrer billederne */
-      gap: 10px; /* Afstand mellem billederne */
-  }
-
-  .billede-container {
-      width: 100%; /* Billeder fylder hele bredden */
-  }
-
-  .billede-container img {
-      width: 85%; /* Billeder fylder containeren */
-      border-radius: 8px; /* Bevar rundede hjørner */
-      filter: brightness(60%); /* Bevar mørkere effekt for læsbar tekst */
-  }
-
-  .tekst-overlay {
-      position: absolute; /* Beholder overlay inde i billedet */
-      bottom: 10%; /* Justerer teksten lidt højere på billedet */
-      left: 10%;
-      width: 80%; /* Juster bredde, så teksten ikke rammer kanterne */
-      padding: 10px;
-      color: white;
-      border-radius: 5px;
-      text-align: left; /* Centrerer teksten */
-  }
-
-  .tekst-overlay h2 {
-      font-size: clamp(16px, 4vw, 24px); /* Dynamisk størrelse */
-  }
-
-  .tekst-overlay p {
-      font-size: clamp(12px, 3vw, 18px); /* Dynamisk størrelse */
-      line-height: 1.6;
-  }
-
-  /* Justering af pilenes placering */
-  button {
-      font-size: 36px; /* Mindre pil-størrelse til mobil */   
-      bottom: -20px; 
-  }
-
-  button.forrige {
-      display: none; 
-     /* top: 95%; /* Flytter pilen længere ned mod prikkerne */
-     /*  left: 0.01%; /* Flytter pilen tættere på skærmens venstre startpunkt */
-  }
-
-  button.naeste {
-      display: none; 
-      /*top: 95%; /* Flytter pilen længere ned mod prikkerne */
-      /*right: 0.01%; /* Flytter pilen tættere på skærmens højre startpunkt */
-  }
-  
-  .button-container{
-      
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .prik-container {
-      margin-top: 10px;
-  }
-
-  .prik {
-      height: 8px;
-      width: 8px;
-  }
-}
-/* ===== Slideshow slut ===== */
-=======
->>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
 
 
 /* ===== Sektion: Hvem driver Fablab ===== */
