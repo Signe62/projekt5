@@ -303,7 +303,7 @@ h2 {
       position: absolute;
       bottom: 20px;
       left: 20px;
-      color: white;
+      color: eeeeee;
       padding: 20px;
       border-radius: 8px;
       width: calc(95% - 40px);
@@ -311,22 +311,21 @@ h2 {
   }
   
   .tekst-overlay h2 {
-      font-size: 30px;
       font-weight: bold;
-      font-family: Helvetica;
-      color: white;
+      color: #eeeeee;
   }
   
   .tekst-overlay p {
       font-size: 18px;
-      line-height: 1.8;
+      line-height: 1.5;
       font-family: Helvetica;
+      color: #eeeeee;
   }
   
   /* Styling af pilene */
   button {
       background: none;
-      color: rgb(6, 17, 59);
+      color: #06113B;
       border: none;
       font-size: 46px;
       cursor: pointer;
@@ -343,8 +342,8 @@ h2 {
   }
   
   button:hover {
-      color: #bbbbbb;
-      transition: all 0.2s ease;
+      color: #3B4A85;
+      transition: all 0.3s ease;
   }
   .button-container{
       display: none;
@@ -363,7 +362,7 @@ h2 {
       height: 12px;
       width: 12px;
       margin: 5px;
-      background-color: #bbbbbb;
+      border: 1px solid;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.3s ease;
@@ -371,7 +370,7 @@ h2 {
   }
   
   .prik:hover {
-      background-color: #717171;
+      background-color: #3B4A85;
   }
   
   .prik.aktiv {
