@@ -38,24 +38,26 @@ h2 {
   .soegefelt {
     padding: 8px;
     font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
+    border: 1px solid #06113B;
+    border-radius: 8px;
     width: 200px;
+    background-color: #eeeeee;
   }
   
   .soegeknap {
     padding: 8px 16px;
     font-size: 14px;
-    background-color: grey;
+    background-color: #06113B;
     border: none;
-    color: #ffffff;
-    border-radius: 20px;
+    color: #eeeeee;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
   .soegeknap:hover {
-    background-color: #ff9100;
+    background-color: #3B4A85;
+    color: #eeeeee;
   }
   
   /* Log ind knap */
