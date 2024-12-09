@@ -320,9 +320,6 @@ h2 {
   
   /* Styling af pilene */
   button {
-      position: relative;
-      bottom: -300px;
-      transform: translateY(-50%);
       background: none;
       color: rgb(6, 17, 59);
       border: none;
