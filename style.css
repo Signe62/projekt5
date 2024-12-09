@@ -269,106 +269,113 @@ h2 {
   text-align: left;
 }
 
-/* ===== Slideshow start ===== */
-.slideshow-container {
-  margin: auto;
-  overflow: hidden;
-}
+    /* ===== Slideshow start ===== */
+    .slideshow-container {
+      margin: auto;
+      overflow: hidden;
+      
+  }
+  
+  .billede-slideshow {
+      display: none;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .billede-container {
+      position: relative;
+      width: 500px;
+      text-align: center;
+  }
+  
+  .billede-container img {
+      width: 95%;
+      border-radius: 10px;
+      filter: brightness(60%);
+  }
+  
+  .tekst-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: calc(95% - 40px);
+      text-align: left;
+  }
+  
+  .tekst-overlay h2 {
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Helvetica;
+      color: white;
+  }
+  
+  .tekst-overlay p {
+      font-size: 18px;
+      line-height: 1.8;
+      font-family: Helvetica;
+  }
+  
+  /* Styling af pilene */
+  button {
+      position: relative;
+      bottom: -300px;
+      transform: translateY(-50%);
+      background: none;
+      color: rgb(6, 17, 59);
+      border: none;
+      font-size: 46px;
+      cursor: pointer;
+      padding: 0;
+      height: auto;
+  }
+  
+  button.forrige {
+      left: 0%;
+  }
+  
+  button.naeste {
+      right: 0%;
+  }
+  
+  button:hover {
+      color: #bbbbbb;
+      transition: all 0.2s ease;
+  }
+  .button-container{
+      display: none;
 
-.billede-slideshow {
-  display: none;
-  justify-content: center;
-  gap: 20px;
-}
 
-.billede-container {
-  position: relative;
-  width: 500px;
-  text-align: center;
-}
+  }
 
-.billede-container img {
-  width: 95%;
-  border-radius: 10px;
-  filter: brightness(60%);
-}
 
-.tekst-overlay {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: calc(95% - 40px);
-  text-align: left;
-}
-
-.tekst-overlay h2 {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Helvetica;
-}
-
-.tekst-overlay p {
-  font-size: 18px;
-  line-height: 1.8;
-  font-family: Helvetica;
-}
-
-/* Styling af pilene */
-button {
-  background: none;
-  color: rgb(6, 17, 59);
-  border: none;
-  font-size: 46px;
-  cursor: pointer;
-  padding: 0;
-  height: auto;
-}
-
-button.forrige {
-  left: 0%;
-}
-
-button.naeste {
-  right: 0%;
-}
-
-button:hover {
-  color: #bbbbbb;
-  transition: all 0.2s ease;
-}
-
-.button-container {
-  display: none;
-}
-
-/* Styling af prikkerne under slideshowet */
-.prik-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.prik {
-  height: 12px;
-  width: 12px;
-  margin: 5px;
-  background-color: #bbbbbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.prik:hover {
-  background-color: #717171;
-}
-
-.prik.aktiv {
-  background-color: #06113B;
-}
-/* ===== Slideshow slut ===== */
+  /* Styling af prikkerne under slideshowet */
+  .prik-container {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .prik {
+      height: 12px;
+      width: 12px;
+      margin: 5px;
+      background-color: #bbbbbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+  }
+  
+  .prik:hover {
+      background-color: #717171;
+  }
+  
+  .prik.aktiv {
+      background-color: #06113B;
+  }
+  /* ===== Slideshow slut ===== */
 
 
 

@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Link til stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <script src="slideshow.js" defer></script>
+
 </head>
 <body>
 
@@ -94,12 +96,60 @@
       </div>
     </div>
 
+      <!-- Billede-slideshow 2 -->
+      <div class="billede-slideshow">
+        <button class="forrige" onclick="skiftBillede(-1)">&#10094;</button>
+        <div class="billede-container">
+            <img src="img/tshirt.png" alt="T-shirt-tryk">
+            <div class="tekst-overlay">
+                <h2>T-shirt tryk</h2>
+                <p>T-shirt tryk gør det muligt at designe og personalisere tøj til ethvert behov. Med vores trykmaskiner kan du skabe unikke designs til events, firmaer, eller personlige projekter.</p>
+            </div>
+        </div>
+        <div class="billede-container">
+            <img src="img/klister.png" alt="Klistermærker">
+            <div class="tekst-overlay">
+                <h2>Klistermærker</h2>
+                <p>Klistermærker giver mulighed for at designe og producere personlige løsninger til mange formål. Med vores udstyr kan du lave unikke designs til events, virksomheder eller kreative projekter.</p>
+            </div>
+        </div>
+        <button class="naeste" onclick="skiftBillede(1)">&#10095;</button>
+    </div>
+
+
+    <!-- Billede-slideshow 3 -->
+    <div class="billede-slideshow">
+      <button class="forrige" onclick="skiftBillede(-1)">&#10094;</button>
+      <div class="billede-container">
+          <img src="img/dt.png" alt="T-shirt tryk">
+          <div class="tekst-overlay">
+              <h2>T-shirt tryk</h2>
+              <p>T-shirt tryk gør det muligt at designe og personalisere tøj til ethvert behov. Med vores trykmaskiner kan du skabe unikke designs til events, firmaer, eller personlige projekter.</p>
+          </div>
+      </div>
+      <div class="billede-container">
+          <img src="img/dt.png" alt="Design Thinking">
+          <div class="tekst-overlay">
+              <h2>Design Thinking</h2>
+              <p>Design Thinking gør det muligt at skabe brugerdrevne løsninger. Hos FABLAB vejleder vi dig gennem processen – fra idéudvikling til prototype og det færdige produkt.</p>
+          </div>
+      </div>
+      <button class="naeste" onclick="skiftBillede(1)">&#10095;</button>
+  </div>
+  <div class="button-container">
+      <button class="mobile_forrige" onclick="skiftBillede(-1)">&#10094;</button>
+      <button class="mobile_naeste" onclick="skiftBillede(1)">&#10095;</button>
+  </div>
+
     <!-- Prikker under slideshowet -->
     <div class="prik-container">
       <span class="prik" onclick="visBillede(1)"></span>
       <span class="prik" onclick="visBillede(2)"></span>
+      <span class="prik" onclick="visBillede(3)"></span>
     </div>
   </section>
+ <!-- Slideshow slut -->
+
 
   <!-- Sektion: Hvem driver Fablab -->
   <section class="hvem-driver">
@@ -167,6 +217,5 @@
   </div>
 </footer>
 
-<script src="slideshow.js"></script>
 </body>
 </html>
