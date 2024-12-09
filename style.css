@@ -257,6 +257,215 @@ h2 {
   margin-right: 255px;
 }
 
+<<<<<<< HEAD
+=======
+
+/* ===== Sektion: Fablabs tilbud ===== */
+.tilbud-overskrift {
+  margin-top: 150px;
+  margin-left: 255px;
+  margin-right: 255px;
+  font-size: 32px;
+  font-family: montserrat;
+  color: #06113B;
+  text-align: left;
+}
+
+>>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
+/* ===== Slideshow start ===== */
+.slideshow-container {
+  margin: auto;
+  overflow: hidden;
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
+}
+
+.billede-slideshow {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+.billede-container {
+  position: relative;
+  width: 500px;
+  text-align: center;
+}
+
+.billede-container img {
+  width: 95%;
+  border-radius: 10px;
+  filter: brightness(60%);
+}
+
+.tekst-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(95% - 40px);
+  text-align: left;
+}
+
+.tekst-overlay h2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+
+.tekst-overlay p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: Helvetica;
+}
+
+/* Styling af pilene */
+button {
+<<<<<<< HEAD
+  position: relative;
+  bottom: -300px;
+  transform: translateY(-50%);
+=======
+>>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
+  background: none;
+  color: rgb(6, 17, 59);
+  border: none;
+  font-size: 46px;
+  cursor: pointer;
+  padding: 0;
+  height: auto;
+}
+
+button.forrige {
+  left: 0%;
+}
+
+button.naeste {
+  right: 0%;
+}
+
+button:hover {
+  color: #bbbbbb;
+  transition: all 0.2s ease;
+}
+<<<<<<< HEAD
+.button-container{
+=======
+
+.button-container {
+>>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
+  display: none;
+}
+
+/* Styling af prikkerne under slideshowet */
+.prik-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prik {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.prik:hover {
+  background-color: #717171;
+}
+
+.prik.aktiv {
+  background-color: #06113B;
+}
+/* ===== Slideshow slut ===== */
+
+<<<<<<< HEAD
+/* ===== Media queries på slideshow ===== */
+
+@media (max-width: 768px) {
+  .billede-slideshow {
+      display: flex; /* Aktivér flex for layout */
+      flex-direction: column; /* Skift til vertikal retning */
+      align-items: center; /* Centrer billederne */
+      gap: 10px; /* Afstand mellem billederne */
+  }
+
+  .billede-container {
+      width: 100%; /* Billeder fylder hele bredden */
+  }
+
+  .billede-container img {
+      width: 85%; /* Billeder fylder containeren */
+      border-radius: 8px; /* Bevar rundede hjørner */
+      filter: brightness(60%); /* Bevar mørkere effekt for læsbar tekst */
+  }
+
+  .tekst-overlay {
+      position: absolute; /* Beholder overlay inde i billedet */
+      bottom: 10%; /* Justerer teksten lidt højere på billedet */
+      left: 10%;
+      width: 80%; /* Juster bredde, så teksten ikke rammer kanterne */
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      text-align: left; /* Centrerer teksten */
+  }
+
+  .tekst-overlay h2 {
+      font-size: clamp(16px, 4vw, 24px); /* Dynamisk størrelse */
+  }
+
+  .tekst-overlay p {
+      font-size: clamp(12px, 3vw, 18px); /* Dynamisk størrelse */
+      line-height: 1.6;
+  }
+
+  /* Justering af pilenes placering */
+  button {
+      font-size: 36px; /* Mindre pil-størrelse til mobil */   
+      bottom: -20px; 
+  }
+
+  button.forrige {
+      display: none; 
+     /* top: 95%; /* Flytter pilen længere ned mod prikkerne */
+     /*  left: 0.01%; /* Flytter pilen tættere på skærmens venstre startpunkt */
+  }
+
+  button.naeste {
+      display: none; 
+      /*top: 95%; /* Flytter pilen længere ned mod prikkerne */
+      /*right: 0.01%; /* Flytter pilen tættere på skærmens højre startpunkt */
+  }
+  
+  .button-container{
+      
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .prik-container {
+      margin-top: 10px;
+  }
+
+  .prik {
+      height: 8px;
+      width: 8px;
+  }
+}
+/* ===== Slideshow slut ===== */
+=======
+>>>>>>> 5b2a9cf3df8146d0de6de2e34152adb9c95294c1
+
+
 /* ===== Sektion: Hvem driver Fablab ===== */
 
 .hvem-driver {
@@ -431,6 +640,8 @@ h2 {
   }
 
 
+
+  
 
   /* === Media Queries === */
 
