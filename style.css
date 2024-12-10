@@ -683,16 +683,22 @@ input:focus, select:focus {
     margin: 0;
   }
 
-
-
   .soegefelt {
     display: none;
   }
 
   .soegeknap {
     display: none;
-
   }
+
+  #logind-knap {
+    font-size: 16px;
+}
+
+#minebookinger-knap {
+  font-size: 16px;
+  margin-right: 10px;
+}
 
   /* Forside */
   .forside {
@@ -764,6 +770,7 @@ input:focus, select:focus {
 
   .overskrift-info {
     text-align: left;
+    padding-left: 35px;
   }
 
   .fablab-tekst {
@@ -779,6 +786,7 @@ input:focus, select:focus {
   /* Fablabs tilbud */
   .tilbud-overskrift {
     margin: 20px 0;
+    margin-top: 80px;
     font-size: 24px;
   }
 
@@ -802,7 +810,7 @@ input:focus, select:focus {
     height: auto;
   }
 
-  button {
+  .naeste, .forrige {
     display: none;
   }
 
