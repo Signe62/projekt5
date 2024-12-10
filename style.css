@@ -68,10 +68,16 @@ h2 {
     color: #eeeeee;
     font-size: 22px;
     font-weight: bold;
-    text-decoration: none;
     border-bottom: 2px solid #eeeeee;
     transition: color 0.3s ease;
     cursor: pointer;
+    padding: 0;
+    margin-right: 30px;
+}
+
+#minebookinger-knap:hover {
+  color: #3B4A85;
+  border-bottom-color: #3B4A85;
 }
 
   /* Log ind knap */
@@ -80,7 +86,6 @@ h2 {
     color: #eeeeee;
     font-size: 22px;
     font-weight: bold;
-    text-decoration: none;
     border-bottom: 2px solid #eeeeee;
     transition: color 0.3s ease;
     cursor: pointer;
@@ -231,6 +236,7 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 130px;
+  margin-top: 100px;
 }
 
 /* Tekst om Fablab */
@@ -277,8 +283,8 @@ h2 {
 
 /* Overskrift styling */
 .tilbud-overskrift {
-  max-width: 920px; 
-  margin: 150px auto 20px; 
+  max-width: 1000px; 
+  margin: 180px auto 20px; 
   text-align: left; 
   font-family: Montserrat, Arial, sans-serif;
   font-size: 32px;
@@ -404,12 +410,11 @@ button:hover {
   flex-direction: column;
   align-items: center; 
   gap: 30px;
-  margin-top: 150px;
+  margin-top: 170px;
 }
 
 /* Tekst om medarbejdere */
 .tekst-hvem-driver {
-  max-width: 920px;
   margin: 0 auto; 
   color: #06113B;
   line-height: 1.5;
@@ -427,7 +432,6 @@ button:hover {
 /* Medarbejder kort */
 .medarbejder {
   text-align: center;
-  max-width: 220px; 
 }
 
 /* Medarbejder billede */
@@ -459,8 +463,8 @@ button:hover {
 
 /* Overskrift styling */
 .feedback-overskrift {
-  max-width: 920px;
-  margin: 180px auto 20px;
+  max-width: 1000px;
+  margin: 170px auto 20px;
   padding: 20px;
 }
 
@@ -468,7 +472,7 @@ button:hover {
 .feedback-talebobler {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 26px;
   max-width: 920px;
   margin: 0 auto;
 }
@@ -538,11 +542,11 @@ button:hover {
 
 /* Styling til containeren for formularen */
 .formular-form {
-  max-width: 920px; /* Samme bredde som "feedback-talebobler" */
+  max-width: 1000px;
   margin: 0 auto; 
   padding: 20px;
   border-radius: 8px; 
-  margin-top: 180px;
+  margin-top: 280px;
   margin-bottom: 180px;
 }
 
@@ -582,6 +586,7 @@ input:focus, select:focus {
   background-color: #FF8C32;
   color: #eeeeee;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
