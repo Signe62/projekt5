@@ -275,199 +275,216 @@ h2 {
 
 /* ===== Sektion: Fablabs tilbud ===== */
 
+/* Overskrift styling */
 .tilbud-overskrift {
-  margin-top: 150px;
-  margin-left: 255px;
-  margin-right: 255px;
+  max-width: 920px; 
+  margin: 150px auto 20px; 
+  text-align: left; 
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 32px;
+  color: #06113B;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 920px; 
+  margin: 0 auto; 
+  overflow: hidden;
+  position: relative;
+}
 
-/* ===== Sektion: Fablabs tilbud ===== */
-.tilbud-overskrift {
-  margin-top: 150px;
-  margin-left: 255px;
-  margin-right: 255px;
-  font-size: 32px;
-  font-family: montserrat;
-  color: #06113B;
+/* Individuelle slides */
+.billede-slideshow {
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Container for billeder */
+.billede-container {
+  position: relative;
+}
+
+/* Billeder */
+.billede-container img {
+  width: 100%;
+  max-height: 400px; /* Begrænser højden for konsistens */
+  object-fit: cover; /* Sikrer, at billedet fylder containeren */
+  border-radius: 8px; /* Bløde hjørner */
+  filter: brightness(80%); /* Reducerer lysstyrke for bedre overlay-kontrast */
+}
+
+/* Tekst overlay på billeder */
+.tekst-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eeeeee;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent baggrund */
+  width: calc(90% - 40px);
   text-align: left;
 }
 
-    /* ===== Slideshow start ===== */
-    .slideshow-container {
-      margin: auto;
-      overflow: hidden;
-      
-  }
-  
-  .billede-slideshow {
-      display: none;
-      justify-content: center;
-      gap: 20px;
-  }
-  
-  .billede-container {
-      position: relative;
-      width: 500px;
-      text-align: center;
-  }
-  
-  .billede-container img {
-      width: 95%;
-      border-radius: 10px;
-      filter: brightness(60%);
-  }
-  
-  .tekst-overlay {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      color: eeeeee;
-      padding: 20px;
-      border-radius: 8px;
-      width: calc(95% - 40px);
-      text-align: left;
-  }
-  
-  .tekst-overlay h2 {
-      font-weight: bold;
-      color: #eeeeee;
-  }
-  
-  .tekst-overlay p {
-      font-size: 18px;
-      line-height: 1.5;
-      font-family: Helvetica;
-      color: #eeeeee;
-  }
-  
-  /* Styling af pilene */
-  button {
-      background: none;
-      color: #06113B;
-      border: none;
-      font-size: 46px;
-      cursor: pointer;
-      padding: 0;
-      height: auto;
-  }
-  
-  button.forrige {
-      left: 0%;
-  }
-  
-  button.naeste {
-      right: 0%;
-  }
-  
-  button:hover {
-      color: #3B4A85;
-      transition: all 0.3s ease;
-  }
-  .button-container{
-      display: none;
+/* Overskrift i overlay */
+.tekst-overlay h2 {
+  font-weight: bold;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #eeeeee;
+}
 
+/* Tekst i overlay */
+.tekst-overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #eeeeee;
+  margin: 0;
+}
 
-  }
+/* Styling af pilene */
+button {
+  background: none;
+  color: #06113B;
+  border: none;
+  font-size: 36px; /* Justeret font-størrelse */
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
 
+/* Pilernes hover-effekt */
+button:hover {
+  color: #3B4A85;
+}
 
-  /* Styling af prikkerne under slideshowet */
-  .prik-container {
-      text-align: center;
-      margin-top: 20px;
-  }
-  
-  .prik {
-      height: 12px;
-      width: 12px;
-      margin: 5px;
-      border: 1px solid;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-      cursor: pointer;
-  }
-  
-  .prik:hover {
-      background-color: #3B4A85;
-  }
-  
-  .prik.aktiv {
-      background-color: #06113B;
-  }
-  /* ===== Slideshow slut ===== */
+/* Knappens container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
 
+/* Styling af prikker under slideshowet */
+.prik-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prik {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.prik:hover {
+  background-color: #3B4A85;
+}
+
+.prik.aktiv {
+  background-color: #06113B;
+}
 
 
 /* ===== Sektion: Hvem driver Fablab ===== */
 
+/* Container til sektionen */
 .hvem-driver {
   display: flex;
   flex-direction: column;
+  align-items: center; 
+  gap: 30px;
+  margin-top: 150px;
 }
 
 /* Tekst om medarbejdere */
 .tekst-hvem-driver {
-  margin-top: 150px;
+  max-width: 920px;
+  margin: 0 auto; 
   color: #06113B;
-  margin-left: 255px;
-  margin-right: 255px;
   line-height: 1.5;
 }
 
-/* Medarbejdere liste */
+/* Liste over medarbejdere */
 .medarbejdere {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
-  margin-top: 30px;
+  gap: 30px; 
+  margin-top: 20px;
 }
 
-.medarbejder img {
-  height: 300px;
-}
-
+/* Medarbejder kort */
 .medarbejder {
   text-align: center;
+  max-width: 220px; 
 }
 
+/* Medarbejder billede */
+.medarbejder img {
+  width: 100%;
+  max-height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+/* Navn på medarbejder */
 .navn-medarbejder {
-  font-size: 28px;
-  font-family: montserrat;
+  font-size: 22px;
+  font-family: Montserrat, Arial, sans-serif;
   color: #06113B;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
+/* Rolle for medarbejder */
 .rolle-medarbejder {
-  font-size: 18px;
-  font-family: Helvetica;
-  color: #06113B;
-  margin-top: -15px;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #555555;
+  margin-top: 5px;
 }
+
 
 /* ===== Sektion: Feedback ===== */
 
+/* Overskrift styling */
 .feedback-overskrift {
-  margin-top: 150px;
-  margin-left: 255px;
+  max-width: 920px;
+  margin: 180px auto 20px;
+  padding: 20px;
 }
 
+/* Container til talebobler */
 .feedback-talebobler {
   display: flex;
   justify-content: center;
-  gap: 27px;
-  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
+/* Individuelle talebobler */
 .taleboble {
   position: relative;
   background-color: #06113B;
   height: 230px;
-  width: 230px;
   border-radius: 8px;
 }
 
+/* Pil under hver taleboble */
 .taleboble::after {
   content: "";
   position: absolute;
@@ -478,22 +495,23 @@ h2 {
   border-color: #06113B transparent transparent transparent; 
 }
 
+/* Tekst inde i talebobler */
 .tekst-taleboble {
   font-family: Helvetica;
   font-size: 18px;
   color: #eeeeee;
   width: 200px;
   line-height: 1.5;
-  margin-left: 20px;
-  padding-top: 15px;
+  padding: 15px;
 }
 
-/* Feedback personer */
+/* Container for personer */
 .feedback-personer {
   display: flex;
   justify-content: center;
 }
 
+/* Navn på personen */
 .navn-person {
   font-size: 28px;
   font-family: montserrat;
@@ -502,6 +520,7 @@ h2 {
   padding-top: 30px;
 }
 
+/* Beskrivelse af personen */
 .beskrivelse-person {
   font-size: 18px;
   font-family: Helvetica;
@@ -510,8 +529,10 @@ h2 {
   margin-top: -15px;
 }
 
+
 /* ===== Sektion: Bookingformular ===== */
 
+/* Overskrift styling */
 .book-tid-overskrift {
   margin-top: 280px;
   margin-left: 255px;
@@ -520,15 +541,17 @@ h2 {
 
 /* Styling til containeren for formularen */
 .formular-form {
-  padding: 20px 30px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 400px;
+  max-width: 920px; /* Samme bredde som "feedback-talebobler" */
+  margin: 0 auto; 
+  padding: 20px;
+  border-radius: 8px; 
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
 
 /* Wrapper til label og input */
 .input-gruppe {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /* Styling til labels */
@@ -587,7 +610,6 @@ input:focus, select:focus {
     color: #eeeeee;
     padding: 1px;
     font-family: Helvetica;
-    margin-top: 280px;
   }
 
   .footer-container {
@@ -634,9 +656,6 @@ input:focus, select:focus {
     font-family: Helvetica;
   }
 
-
-
-  
 
   /* === Media Queries === */
 
