@@ -69,23 +69,23 @@ h2 {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px solid;
-    transition: color 0.3s ease; border-bottom-color: 0.3s ease;
+    border-bottom: 2px solid #eeeeee;
+    transition: color 0.3s ease;
     cursor: pointer;
-  }
-  
+}
+
   /* Log ind knap */
-  #logind-knap {
+#logind-knap {
     font-family: Helvetica, Arial, sans-serif;
     color: #eeeeee;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px solid;
-    transition: color 0.3s ease; border-bottom-color: 0.3s ease;
+    border-bottom: 2px solid #eeeeee;
+    transition: color 0.3s ease;
     cursor: pointer;
-  }
-  
+}
+
   #logind-knap:hover {
     color: #3B4A85;
     border-bottom-color: #3B4A85;
@@ -656,48 +656,74 @@ input:focus, select:focus {
   }
 
 
-  /* === Media Queries === */
-
-/* Mobiltelefoner (max-width: 768px) */
+/* === Media Queries === */
 @media (max-width: 768px) {
-  .forside {
-      flex-direction: column;
-      height: auto;
-      margin-bottom: 30px;
+
+  /* Global styling */
+  body {
+    font-size: 16px;
+    text-align: left;
   }
 
-  .logind-knap {
-      top: 30px;
-      font-size: 16px;
-      right: 30px;
+  h2 {
+    font-size: 24px;
+  }
+
+  /* Log ind og søgefunktion */
+  .soegefunktion-logind {
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .soegefunktion {
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  .soegefelt {
+    display: none;
+  }
+
+  .soegeknap {
+    display: none;
+
+  }
+
+  /* Forside */
+  .forside {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 30px;
   }
 
   .forside-overlay {
-      width: auto;
-      padding: 30px;
-      text-align: left;
-  }
+    width: auto;
+    padding: 10px;
+    text-align: left;
+}
 
   .forside-logo {
-      top: 30px;
-      left: 30px;
-      width: 95px;
-  }
+    top: 40px;
+    left: 30px;
+    width: 95px;
+}
 
   #forside-overskrift {
-      margin-top: 80px;
-      font-size: 32px;
+    margin-top: 100px;
+    font-size: 28px;
+  }
+  
+  .forside-tekst {
+    font-size: 16px;
   }
 
   .forside-billede {
-      width: auto;
-      display: flex;
-      height: 150px;
-  }
-
-  .forside-tekst {
-      font-size: 16px;
-  }
+    width: auto;
+    display: flex;
+    height: 150px;
+}
 
   .forside-knapper {
     margin-bottom: 80px;
@@ -708,62 +734,98 @@ input:focus, select:focus {
   }
 
   .knap-primaer {
-      font-size: 16px;
-      padding: 12px 26px;
-      border-radius: 8px;
-      cursor: pointer;
-  }
+    font-size: 16px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-  .knap-sekundaer {
-      display: none;
-  }
+.knap-sekundaer {
+    display: none;
+}
 
-  .forside-pil {
-      display: none;
-  }
+.button-container {
+  display: none;
+}
 
+.forside-pil {
+  display: none;
+}
+
+  /* Hvad er Fablab */
   .hvad-er-fablab {
-      flex-direction: column;
-      text-align: left;
-      padding-left: 30px;
-      padding-right: 30px;
-      gap: 0px;
-      margin-top: 0px;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
   }
 
-  .fablab-info {
-      margin-top: 10px;
-      padding-right: 20px;
+  .overskrift-info {
+    text-align: left;
   }
 
   .fablab-tekst {
-      width: auto;
+    width: 100%;
   }
 
-  .tekst-afsnit {
-    font-size: 16px;
+  .fablab-info {
+    padding: 20px;
+    height: auto;
+    margin: 0;
   }
 
-  .info-afsnit {
-    font-size: 16px;
-  }
-
+  /* Fablabs tilbud */
   .tilbud-overskrift {
-      margin: 0px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 80px;
+    margin: 20px 0;
+    font-size: 24px;
   }
 
+  .billede-container {
+    position: relative;
+    text-align: center;
+  }
+  .billede-slideshow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slideshow-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .billede-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    display: none;
+  }
+
+  .tekst-overlay {
+    padding: 10px;
+    width: 300px;
+  }
+
+  /* Hvem driver Fablab */
   .tekst-hvem-driver {
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 80px;
-      margin: auto;
+    padding: 10px;
   }
 
-  .beskrivelse-hvem {
-    font-size: 16px;
+  .overskrift-hvem {
+    margin: 0;
+  }
+
+  .hvem-driver {
+    margin: 0;
+    padding-top: 40px;
+    gap: 20px;
+  }
+
+  .medarbejdere {
+    flex-direction: column;
+    gap: 20px;
   }
 
   .medarbejdere {
@@ -774,108 +836,70 @@ input:focus, select:focus {
     padding: 20px;
 }
 
-.navn-medarbejder {
-  margin: 0;
-  padding-top: 10px;
-}
+  .medarbejder img {
+    height: auto;
+  }
 
-.rolle-medarbejder {
-  font-size: 16px;
-  font-family: Helvetica;
-  color: #06113B;
-  margin-top: 10px;
-}
-
-.tekst-taleboble {
-  font-size: 16px;
-  padding-bottom: 35px;
-}
-
+  /* Hvad siger vores studerende / Feedback */
   .feedback-overskrift {
-      padding-left: 30px;
-      margin: auto;
-      font-size: 32px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-top: 80px;
-  }
-
-  .feedback-talebobler {
-      gap: 130px;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .feedback-personer {
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   
-  .navn-person {
-    font-family: montserrat;
-    color: #06113B;
-    text-align: center;
-    padding-top: 15px;
-  }
-  
-  .beskrivelse-person {
-    margin-top: -20px;
-  }
-
-  .book-tid-overskrift {
-      margin: 0px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 150px;
-  }
-
   .feedback-talebobler {
-      flex-direction: column;
-      align-items: center;
+    gap: 150px;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .tekst-taleboble {
+    line-height: 1.4;
   }
 
-  .footer {
+  /* Bookingformular */
+  .formular-form {
+    padding: 10px;
     margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  input, select, #sendKnap {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+  }
+
+  .kontakt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .kontakt-info p {
+    margin: 0;
+    font-size: 14px;
   }
 
   .footer-container {
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    margin: 0;
-    padding: 30px;
-}
-
-.kontakt-info {
     display: flex;
-    flex-direction: column; 
-    gap: 20px;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+  }
 
-.kontakt-info p {
-    font-size: 14px;
-    margin: 0px;
-}
-
-.kontakt-info img {
-    width: 20px; 
-    height: auto;
-    margin-right: -15px;
-}
-
-.sociale-medier {
+  .sociale-medier {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     padding: 0px;
-}
-
-  .sociale-medier img {
-    width: 30px;
   }
 
   .copyright {
-      font-size: 14px;
+    font-size: 12px;
   }
 }
