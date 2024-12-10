@@ -230,6 +230,69 @@
     <h2 class="book-tid-overskrift">Book tid</h2>
 </sektion> -->
 
+<section class="formular-form">
+  <form id="bookingFormular">
+      <h1>Book tid</h1>
+
+      <!-- Input: Fulde navn -->
+      <div class="input-gruppe">
+          <label for="navn">Fulde navn *</label>
+          <input type="text" id="navn" name="navn" required>
+      </div>
+
+      <!-- Input: Studie e-mail -->
+      <div class="input-gruppe">
+          <label for="email">Studie e-mail *</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Input: Telefonnummer -->
+      <div class="input-gruppe">
+          <label for="telefon">Telefonnummer *</label>
+          <input type="tel" id="telefon" name="telefon" required>
+      </div>
+
+      <!-- Select: Ønsket maskine -->
+      <div class="input-gruppe">
+          <label for="maskine">Ønsket brug af maskine *</label>
+          <select id="maskine" name="maskine" required>
+              <option value="">-- Vælg --</option>
+              <option value="Printer">Printer</option>
+              <option value="3D-Laser">3D-Laser</option>
+          </select>
+      </div>
+
+      <!-- Input: Antal besøgende -->
+      <div class="input-gruppe">
+          <label for="besoegende">Antal besøgende *</label>
+          <input type="number" id="besoegende" name="besoegende" required>
+      </div>
+
+      <!-- Input: Dato -->
+      <div class="input-gruppe">
+          <label for="dato">Vælg dag *</label>
+          <input type="date" id="dato" name="dato" required>
+      </div>
+
+      <!-- Select: Tid -->
+      <div class="input-gruppe">
+          <label for="tid">Vælg tid *</label>
+          <select id="tid" name="tid" required>
+              <option value="">-- Vælg --</option>
+              <option value="10:00">10:00</option>
+              <option value="12:00">12:00</option>
+              <option value="14:00">14:00</option>
+          </select>
+      </div>
+
+      <!-- Indsendelsesknap -->
+      <button type="submit" id="sendKnap">Gennemfør</button>
+  </form>
+
+  <!-- Dynamisk besked -->
+  <p id="besked" aria-live="polite"></p>
+</section>
+
 </main>
 
 <!-- Footer sektion -->

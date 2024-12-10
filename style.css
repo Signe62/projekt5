@@ -518,6 +518,68 @@ h2 {
   margin-right: 255px;
 }
 
+/* Styling til containeren for formularen */
+.formular-form {
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Wrapper til label og input */
+.input-gruppe {
+  margin-bottom: 15px;
+}
+
+/* Styling til labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Styling til alle input- og dropdownfelter */
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #eeeeee;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Styling, når et felt er i fokus */
+input:focus, select:focus {
+  border-color: #FF8C32;
+}
+
+/* Styling til knappen */
+button {
+  padding: 10px 15px;
+  background-color: #FF8C32;
+  color: #eeeeee;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Ændrer baggrundsfarve ved hover */
+button:hover {
+  background-color: #E68900;
+}
+
+/* Styling til den dynamiske besked */
+#besked {
+  margin-top: 15px;
+  text-align: center;
+}
+
+
 /* ===== Footer sektion ===== */
 
   .footer {
