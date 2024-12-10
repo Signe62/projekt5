@@ -557,7 +557,7 @@ input:focus, select:focus {
 }
 
 /* Styling til knappen */
-button {
+#sendKnap {
   padding: 10px 15px;
   background-color: #FF8C32;
   color: #eeeeee;
@@ -569,7 +569,7 @@ button {
 }
 
 /* Ændrer baggrundsfarve ved hover */
-button:hover {
+#sendKnap:hover {
   background-color: #E68900;
 }
 
