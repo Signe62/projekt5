@@ -273,124 +273,129 @@ h2 {
   line-height: 1.5;
 }
 
-    /* ===== Sektion: Fablabs tilbud ===== */
-    .tilbud-overskrift {
-      margin-top: 150px;
-      margin-left: 230px;
-      margin-right: 255px;
-      font-size: 32px;
-      font-family: montserrat;
-      color: #06113B;
-      text-align: left;
-    }
-  
-    /* ===== Slideshow start ===== */
-    .slideshow-container {
-        margin: auto;
-        overflow: hidden;
-        
-    }
-    
-    .billede-slideshow {
-        display: none;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .billede-container {
-        position: relative;
-        width: 500px;
-        text-align: center;
-    }
-    
-    .billede-container img {
-        width: 95%;
-        border-radius: 10px;
-        filter: brightness(60%);
-    }
-    
-    .tekst-overlay {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-        padding: 20px;
-        border-radius: 8px;
-        width: calc(95% - 40px);
-        text-align: left;
-    }
-    
-    .tekst-overlay h2 {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: Helvetica;
-    }
-    
-    .tekst-overlay p {
-        font-size: 18px;
-        line-height: 1.8;
-        font-family: Helvetica;
-    }
-    
-    /* Styling af pilene */
-    button {
-        position: relative;
-        bottom: -200px;
-        transform: translateY(-50%);
-        background: none;
-        color: rgb(6, 17, 59);
-        border: none;
-        font-size: 46px;
-        cursor: pointer;
-        padding: 0;
-        height: auto;
-    }
-    
-    button.forrige {
-        left: 0%;
-    }
-    
-    button.naeste {
-        right: 0%;
-    }
-    
-    button:hover {
-        color: #bbbbbb;
-        transition: all 0.2s ease;
-    }
-    .button-container{
-        display: none;
+/* ===== Sektion: Fablabs tilbud ===== */
 
+/* Overskrift styling */
+.tilbud-overskrift {
+  max-width: 920px; 
+  margin: 150px auto 20px; 
+  text-align: left; 
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 32px;
+  color: #06113B;
+}
 
-    }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 920px; 
+  margin: 0 auto; 
+  overflow: hidden;
+}
 
+/* Individuelle slides */
+.billede-slideshow {
+  justify-content: center;
+  gap: 30px;
+}
 
-    /* Styling af prikkerne under slideshowet */
-    .prik-container {
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .prik {
-        height: 12px;
-        width: 12px;
-        margin: 5px;
-        background-color: #bbbbbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.3s ease;
-        cursor: pointer;
-    }
-    
-    .prik:hover {
-        background-color: #717171;
-    }
-    
-    .prik.aktiv {
-        background-color: #06113B;
-    }
-/* ===== Slideshow slut ===== */
-    
+/* Container for billeder */
+.billede-container {
+  position: relative;
+}
+
+/* Billeder */
+.billede-container img {
+  max-width: 920px;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px; 
+  filter: brightness(80%);
+}
+
+/* Tekst overlay på billeder */
+.tekst-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #eeeeee;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: calc(90% - 40px);
+  text-align: left;
+}
+
+/* Overskrift i overlay */
+.tekst-overlay h2 {
+  font-weight: bold;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #eeeeee;
+}
+
+/* Tekst i overlay */
+.tekst-overlay p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #eeeeee;
+  margin: 0;
+}
+
+/* Styling af pilene */
+button {
+  background: none;
+  color: #06113B;
+  border: none;
+  font-size: 36px; 
+  cursor: pointer;
+  padding: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Pilernes hover-effekt */
+button:hover {
+  color: #3B4A85;
+}
+
+/* Knappens container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 0 10px;
+}
+
+/* Styling af prikker under slideshowet */
+.prik-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.prik {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.prik:hover {
+  background-color: #3B4A85;
+}
+
+.prik.aktiv {
+  background-color: #06113B;
+}    
     
 /* ===== Sektion: Hvem driver Fablab ===== */
 
