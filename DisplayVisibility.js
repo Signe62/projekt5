@@ -2,7 +2,8 @@ let isLoggedIn = localStorage.getItem("isLoggedIn");
 
 let mineBookingerKnap = document.getElementById("minebookinger-knap");
 let logIndKnap = document.getElementById("logind-knap");
-let forsideOverskrift = document.getElementById("forside-overskrift");
+let forsideOverskrift = document.getElementById("forside-overskrift"); 
+let bookingFormular = document.getElementById("formular-form");
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log(isLoggedIn);
@@ -10,9 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         mineBookingerKnap.style.visibility = "visible";
         logIndKnap.textContent = "Log ud";
         forsideOverskrift.textContent = "Velkommen, Jonas"
+        bookingFormular.style.display = "block";
     } else {
         mineBookingerKnap.style.visibility = "hidden";
         logIndKnap.textContent = "Log ind";
+        bookingFormular.style.display = "none";
     }
 });
 

@@ -436,8 +436,7 @@ button:hover {
 
 /* Medarbejder billede */
 .medarbejder img {
-  width: 100%;
-  max-height: 300px; 
+  max-height: 314px; 
   object-fit: cover; 
   border-radius: 8px;
 }
@@ -462,6 +461,10 @@ button:hover {
 /* ===== Sektion: Feedback ===== */
 
 /* Overskrift styling */
+.feedback {
+  margin-bottom: 300px;
+}
+
 .feedback-overskrift {
   max-width: 1000px;
   margin: 170px auto 20px;
@@ -541,10 +544,10 @@ button:hover {
 }
 
 /* Styling til containeren for formularen */
-.formular-form {
+#formular-form {
   max-width: 1000px;
   margin: 0 auto; 
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px; 
   margin-top: 280px;
   margin-bottom: 180px;
@@ -852,6 +855,10 @@ input:focus, select:focus {
   }
 
   /* Hvad siger vores studerende / Feedback */
+  .feedback {
+    margin-bottom: 220px;
+  }
+
   .feedback-overskrift {
     margin: 0;
     padding-top: 50px;
@@ -869,7 +876,7 @@ input:focus, select:focus {
   }
 
   /* Bookingformular */
-  .formular-form {
+  #formular-form {
     padding: 10px;
     margin-top: 150px;
     margin-bottom: 50px;
