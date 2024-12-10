@@ -37,6 +37,6 @@ function bookTid(event) {
     if (isLoggedIn === "false") {
         window.location.href = "login.html";
     } else {
-        window.location.href = "#hvad-er-fablab"; // opdater til booking section
+        window.location.href = "#formular-form";
     }
 }
