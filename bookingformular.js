@@ -47,7 +47,7 @@ function haandterFormular(event) {
         console.log("- " + gyldigeMaskiner[i]);
     }
 
-    // Saml data i et objekt
+    // Saml data
     let bookingData = {
         navn: navn,
         email: email,
@@ -61,7 +61,7 @@ function haandterFormular(event) {
     // Vis bookingdata i konsollen
     console.log("Bookingdata:", bookingData);
 
-    // DOM: Opdater beskeden på siden
+    // Opdater beskeden på siden
     let beskedElement = document.getElementById("besked");
     beskedElement.textContent = "Tak, " + bookingData.navn + "! Din booking er modtaget til " + bookingData.maskine + " den " + bookingData.dato + " kl. " + bookingData.tid + ".";
 
