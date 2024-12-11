@@ -135,7 +135,7 @@ h2 {
   font-family: montserrat;
 }
 
-.forside-tekst {
+#forside-tekst {
   font-size: 23px;
   font-family: Helvetica;
   line-height: 1.5;
@@ -599,7 +599,7 @@ input:focus, select:focus {
 
 /* Ændrer baggrundsfarve ved hover */
 #sendKnap:hover {
-  background-color: #E68900;
+  background-color: #ffb451;
 }
 
 /* Styling til den dynamiske besked */
@@ -715,7 +715,7 @@ input:focus, select:focus {
     font-size: 28px;
   }
   
-  .forside-tekst {
+  #forside-tekst {
     font-size: 16px;
   }
 
