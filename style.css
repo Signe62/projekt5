@@ -681,19 +681,6 @@ input:focus, select:focus {
     padding: 20px;
   }
 
-  .soegefunktion {
-    padding: 0;
-    margin: 0;
-  }
-
-  .soegefelt {
-    display: none;
-  }
-
-  .soegeknap {
-    display: none;
-  }
-
   #logind-knap {
     font-size: 16px;
 }
@@ -875,6 +862,10 @@ input:focus, select:focus {
     line-height: 1.4;
   }
 
+  .feedback-personer {
+    margin-top: -20px;
+  }
+
   /* Bookingformular */
   #formular-form {
     padding: 10px;
@@ -919,5 +910,20 @@ input:focus, select:focus {
 
   .copyright {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .soegefunktion {
+    padding: 0;
+    margin: 0;
+  }
+
+  .soegefelt {
+    display: none;
+  }
+
+  .soegeknap {
+    display: none;
   }
 }
