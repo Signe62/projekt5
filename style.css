@@ -438,7 +438,7 @@ button:hover {
 .medarbejder img {
   max-height: 314px; 
   object-fit: cover; 
-  border-radius: 8px;
+  border-radius: 50%; 
 }
 
 /* Navn på medarbejder */
