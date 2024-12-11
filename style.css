@@ -425,7 +425,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px; 
+  gap: 50px; 
   margin-top: 20px;
 }
 
@@ -436,7 +436,7 @@ button:hover {
 
 /* Medarbejder billede */
 .medarbejder img {
-  max-height: 314px; 
+  max-height: 290px; 
   object-fit: cover; 
   border-radius: 50%; 
 }
