@@ -1,8 +1,7 @@
 
-// Variabel: Hent søgefeltet fra DOM
 let searchInput = document.getElementById("soegefelt");
 
-// Array: Indeholder søgeord som objekter med tilknyttede sektion-ID'er
+// En liste over de søgeord som brugeren kan skrive, og hvor på siden de bliver ført hen //
 let searchKeywords = [
     { keyword: "åbningstider", target: "fablab-info" },
     { keyword: "tilbud", target: "fablabs-tilbud" },    
@@ -10,60 +9,52 @@ let searchKeywords = [
     { keyword: "udtagelser", target: "feedback" }  
 ];
 
-// Funktion: Håndterer søgning
-function search() {
-    // Debugging: Udskriv en besked, når søgning starter
-    console.log("Søgefunktion kaldt");
 
-    // Variabel: Hent og normalisér brugerens input
+function search() {
+    // Fjerner eventuelle mellemrum fra starten og slutningen, og laver alt teksten om til små bogstaver. 
     let userInput = searchInput.value.trim().toLowerCase();
 
-    // Debugging: Udskriv brugerens input
+    // Bliver brugt til at finde fejl og forstå hvad der sker i koden // 
     console.log("Brugerinput:", userInput);
 
-    // Kontrolstruktur (if-else): Tjek for tomt input
+  // Tjekker om userInput er tomt //  
     if (userInput === "") {
-        alert("Søgefeltet kan ikke være tomt.");
-        return;
+        alert("Søgefeltet kan ikke være tomt."); // Kommer en alert hvis userInput er tomt //
+        return; // Stopper indtil brugeren skriver noget andet //
     }
 
-    // Variabel: Boolean til at spore, om der er fundet et match
+    // Der er ikke blevet fundet et match // 
     let found = false;
 
-    // Kontrolstruktur (loop): Gå gennem søgeordene
-    for (let i = 0; i < searchKeywords.length; i++) {
-        // Debugging: Udskriv hvert søgeord, der sammenlignes
-        console.log("Sammenligner med:", searchKeywords[i].keyword);
-
-        // Kontrolstruktur (if-else): Tjek, om brugerinput matcher et søgeord
+   // starter en for-loop //
+    for (let i = 0; i < searchKeywords.length; i++) { 
+        // Koden tjekker om det brugeren har skrevet er lig med et af searchkeywordsene // 
         if (userInput === searchKeywords[i].keyword.toLowerCase()) { 
 
-            // Debugging: Udskriv det fundne match
+            // Der bliver vist en besked i konsollen hvis der er fundet et match som fortæller hvilket sektion der er fundet og skal scrolle til. 
             console.log("Match fundet! Scroller til sektion:", searchKeywords[i].target);
 
-            // DOM: Find sektionen baseret på ID
+            // HTML-sektion findes ved hjælp af searchkeywords // 
             let targetSection = document.getElementById(searchKeywords[i].target);
 
-            // Kontrolstruktur (if-else): Tjek, om sektionen findes
             if (targetSection) {
-                // DOM: Scroll til sektionen
+                // scroller ned til sektionen på en smooth måde // 
                 targetSection.scrollIntoView({ behavior: "smooth" });
             } else {
                 alert("Sektionen findes ikke på siden.");
-                console.error("Sektion med ID '" + searchKeywords[i].target + "' blev ikke fundet.");
             }
 
-            found = true; // Opdater found til true
-            break; // Afslut loopet
+            // Der er fundet et match og loopen stopper //
+            found = true; 
+            break; 
         }
     }
 
-    // Kontrolstruktur (if-else): Håndter, hvis intet match blev fundet
+    // Hvis der ikke er fundet noget match under søgningen, vises en advarselsbesked som alert //
     if (!found) {
         alert("Ingen resultater fundet for '" + userInput + "'");
-        console.warn("Ingen match for brugerinput:", userInput);
     }
 }
 
-// Debugging: Udskriv søgeordene til konsollen for kontrol
+// Udskriv søgeordene til konsollen for kontrol // 
 console.log("Mulige søgeord:", searchKeywords);
