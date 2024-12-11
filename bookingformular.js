@@ -38,7 +38,7 @@ function haandterFormular(event) {
     }
 
     // Arrays: Definer gyldige maskiner
-    let gyldigeMaskiner = ["Printer", "3D-Laser"];
+    let gyldigeMaskiner = ["3D-printer", "Laserskærer"];
     if (!gyldigeMaskiner.includes(maskine)) {
         alert("Vælg en gyldig maskine.");
         return;
