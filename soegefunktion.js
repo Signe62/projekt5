@@ -1,53 +1,69 @@
-// script.js
 
-// Variabler til at gemme søgefeltet og søgeord
-let searchInput = document.getElementById("soegefelt"); 
+// Variabel: Hent søgefeltet fra DOM
+let searchInput = document.getElementById("soegefelt");
 
-// Array der indeholder mulige søgeord og tilhørende URL'er
+// Array: Indeholder søgeord som objekter med tilknyttede sektion-ID'er
 let searchKeywords = [
-    { keyword: "Åbningstider", target: "fablab-info" }, 
-    { keyword: "donation", url: "doner.html" }, 
-    { keyword: "doner", url: "doner.html" },
-    { keyword: "tilmeld", url: "blivfrivillig.html" },
-    { keyword: "quiz", url: "frivillighed.html" },
-    { keyword: "cv", url: "index.html" } ];
+    { keyword: "åbningstider", target: "fablab-info" },
+    { keyword: "tilbud", target: "fablabs-tilbud" },    
+    { keyword: "medarbejdere", target: "hvem-driver" }, 
+    { keyword: "udtagelser", target: "feedback" }  
+];
 
-// Søgefunktion
+// Funktion: Håndterer søgning
 function search() {
-    // Variabel til at gemme brugerens input, og typecast det til lowercase for at gøre sammenligning lettere
-    let userInput = searchInput.value.toLowerCase();
+    // Debugging: Udskriv en besked, når søgning starter
+    console.log("Søgefunktion kaldt");
+
+    // Variabel: Hent og normalisér brugerens input
+    let userInput = searchInput.value.trim().toLowerCase();
 
     // Debugging: Udskriv brugerens input
-    console.log("Bruger input:", userInput);
+    console.log("Brugerinput:", userInput);
 
-    // If-else kontrolstruktur til at tjekke om input er tomt
+    // Kontrolstruktur (if-else): Tjek for tomt input
     if (userInput === "") {
-        alert("Søgefeltet kan ikke være tomt");
-        return; // Stop funktionen hvis input er tomt
+        alert("Søgefeltet kan ikke være tomt.");
+        return;
     }
 
-    // Variabel til at spore om vi har fundet et match
+    // Variabel: Boolean til at spore, om der er fundet et match
     let found = false;
 
-    // For-løkke for at søge i arrayet af søgeord (loop gennem objekterne i searchKeywords arrayet)
+    // Kontrolstruktur (loop): Gå gennem søgeordene
     for (let i = 0; i < searchKeywords.length; i++) {
-        // Kontrolstruktur (if-else) for at tjekke om brugerens input matcher et af søgeordene
-        if (userInput === searchKeywords[i].keyword) {
-            // Debugging: Udskriv den fundne URL
-            console.log("Matcher fundet! Omdirigerer til:", searchKeywords[i].url);
+        // Debugging: Udskriv hvert søgeord, der sammenlignes
+        console.log("Sammenligner med:", searchKeywords[i].keyword);
 
-            // Omdirigér til den matchende side
-            window.location.href = searchKeywords[i].url;
-            found = true; // Opdater found variabel
-            break; // Stop loopet, da vi har fundet en match
+        // Kontrolstruktur (if-else): Tjek, om brugerinput matcher et søgeord
+        if (userInput === searchKeywords[i].keyword.toLowerCase()) { 
+
+            // Debugging: Udskriv det fundne match
+            console.log("Match fundet! Scroller til sektion:", searchKeywords[i].target);
+
+            // DOM: Find sektionen baseret på ID
+            let targetSection = document.getElementById(searchKeywords[i].target);
+
+            // Kontrolstruktur (if-else): Tjek, om sektionen findes
+            if (targetSection) {
+                // DOM: Scroll til sektionen
+                targetSection.scrollIntoView({ behavior: "smooth" });
+            } else {
+                alert("Sektionen findes ikke på siden.");
+                console.error("Sektion med ID '" + searchKeywords[i].target + "' blev ikke fundet.");
+            }
+
+            found = true; // Opdater found til true
+            break; // Afslut loopet
         }
     }
 
-    // Hvis der ikke findes et match
+    // Kontrolstruktur (if-else): Håndter, hvis intet match blev fundet
     if (!found) {
         alert("Ingen resultater fundet for '" + userInput + "'");
+        console.warn("Ingen match for brugerinput:", userInput);
     }
 }
 
-// Debugging: Udskriv søgeordene for at sikre, at arrayet er korrekt
+// Debugging: Udskriv søgeordene til konsollen for kontrol
 console.log("Mulige søgeord:", searchKeywords);
