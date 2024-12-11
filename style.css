@@ -443,7 +443,7 @@ button:hover {
 
 /* Navn på medarbejder */
 .navn-medarbejder {
-  font-size: 22px;
+  font-size: 28px;
   font-family: Montserrat, Arial, sans-serif;
   color: #06113B;
   margin-top: 10px;
@@ -451,10 +451,10 @@ button:hover {
 
 /* Rolle for medarbejder */
 .rolle-medarbejder {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Helvetica, Arial, sans-serif;
-  color: #555555;
-  margin-top: 5px;
+  color: #06113B;
+  margin-top: -15px;
 }
 
 
@@ -513,6 +513,7 @@ button:hover {
 .feedback-personer {
   display: flex;
   justify-content: center;
+  margin-top: -20px;
 }
 
 /* Navn på personen */
@@ -860,10 +861,6 @@ input:focus, select:focus {
 
   .tekst-taleboble {
     line-height: 1.4;
-  }
-
-  .feedback-personer {
-    margin-top: -20px;
   }
 
   /* Bookingformular */
