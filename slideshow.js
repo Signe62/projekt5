@@ -25,9 +25,6 @@ function opdaterBillede(nyIndex) {
     // Vis det nye billede og markér prikken
     billeder[slideshowData.nuvaerendeIndex].style.display = 'flex';
     prikker[slideshowData.nuvaerendeIndex].classList.add('aktiv');
-
-    // Fejlfinding: Udskriv det aktuelle billedeindeks
-    console.log("Aktuelt billedeindeks:", slideshowData.nuvaerendeIndex);
 }
 
 // Funktion til at skifte billede frem eller tilbage
