@@ -418,6 +418,7 @@ button:hover {
   margin: 0 auto; 
   color: #06113B;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 /* Liste over medarbejdere */
@@ -436,7 +437,7 @@ button:hover {
 
 /* Medarbejder billede */
 .medarbejder img {
-  max-height: 290px; 
+  max-height: 295px; 
   object-fit: cover; 
   border-radius: 50%; 
 }
