@@ -1,11 +1,8 @@
-// Debugging: Bekræft at JavaScript-filen er korrekt linket
-console.log("JavaScript er korrekt linket.");
-
-// Funktion til at håndtere formularens indsendelse
+// Håndterer indsendelse af formularen
 function haandterFormular(event) {
-    event.preventDefault(); // Forhindrer siden i at genindlæse
+    event.preventDefault();
 
-    // Variabler: Hent data fra inputfelterne
+    // Indsamler data fra formularens felter
     let navn = document.getElementById("navn").value;
     let email = document.getElementById("email").value;
     let telefon = document.getElementById("telefon").value;
@@ -14,7 +11,7 @@ function haandterFormular(event) {
     let dato = document.getElementById("dato").value;
     let tid = document.getElementById("tid").value;
 
-    // Debugging: Log de indtastede data
+    // Udskriver de indtastede data i konsollen til fejlfinding
     console.log("Indtastede data:", {
         navn: navn,
         email: email,
@@ -25,32 +22,32 @@ function haandterFormular(event) {
         tid: tid
     });
 
-    // Kontrolstruktur: Tjek om alle felter er udfyldt korrekt
+    // Tjek om alle felter er udfyldt
     if (!navn || !email || !telefon || !maskine || isNaN(besoegende) || !dato || !tid) {
         alert("Udfyld venligst alle felter korrekt!");
         return;
     }
 
-    // Operatorer: Begræns antal besøgende til maks. 5
+    // Tjek om antal besøgende er højst 5
     if (besoegende > 5) {
         alert("Der kan maks. bookes tid for 5 personer.");
         return;
     }
 
-    // Arrays: Definer gyldige maskiner
+    // Tjek om maskinen er gyldig
     let gyldigeMaskiner = ["3D-printer", "Laserskærer"];
     if (!gyldigeMaskiner.includes(maskine)) {
         alert("Vælg en gyldig maskine.");
         return;
     }
 
-    // Loops: Log de gyldige maskiner
+    // Vis gyldige maskiner i konsollen
     console.log("Gyldige maskiner:");
     for (let i = 0; i < gyldigeMaskiner.length; i++) {
         console.log("- " + gyldigeMaskiner[i]);
     }
 
-    // Objekter: Saml data i et objekt
+    // Saml data i et objekt
     let bookingData = {
         navn: navn,
         email: email,
@@ -61,19 +58,19 @@ function haandterFormular(event) {
         tid: tid
     };
 
-    // Debugging: Log objektet
+    // Vis bookingdata i konsollen
     console.log("Bookingdata:", bookingData);
 
     // DOM: Opdater beskeden på siden
     let beskedElement = document.getElementById("besked");
     beskedElement.textContent = "Tak, " + bookingData.navn + "! Din booking er modtaget til " + bookingData.maskine + " den " + bookingData.dato + " kl. " + bookingData.tid + ".";
 
-    // Events: Ændr tekst på knappen efter indsendelse
+    // Opdater knappen efter indsendelse
     let sendKnap = document.getElementById("sendKnap");
     sendKnap.textContent = "Indsendt!";
-    sendKnap.disabled = true; // Deaktiver knappen for at forhindre gentagne klik
+    sendKnap.disabled = true; 
 }
 
-// Events: Tilknyt funktionen til formularens indsendelse
+// Tilføj funktion til formularens indsendelse
 let formular = document.getElementById("bookingFormular");
 formular.addEventListener("submit", haandterFormular);
