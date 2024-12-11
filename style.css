@@ -144,7 +144,7 @@ h2 {
 
 /* Forside billede */
 .forside-billede {
-  background-image: url("img/forsidebillede.jpg");
+  background-image: url("img/forsidebillede.webp"); 
   width: 50%;
   position: relative;
   display: flex;
