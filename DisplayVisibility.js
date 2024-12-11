@@ -34,9 +34,9 @@ function logInOrOut(event) {
 
 function bookTid(event) {
     event.preventDefault();
-    console.log("hallo")
 
     if (isLoggedIn === "false") {
+        console.log("Bruger er ikke logget ind, skifter til login side")
         window.location.href = "login.html";
     } else {
         window.location.href = "#formular-form";
