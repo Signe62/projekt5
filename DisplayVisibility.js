@@ -2,7 +2,8 @@ let isLoggedIn = localStorage.getItem("isLoggedIn");
 
 let mineBookingerKnap = document.getElementById("minebookinger-knap");
 let logIndKnap = document.getElementById("logind-knap");
-let forsideOverskrift = document.getElementById("forside-overskrift"); 
+let forsideOverskrift = document.getElementById("forside-overskrift");
+let forsideTekst = document.getElementById("forside-tekst");
 let bookingFormular = document.getElementById("formular-form");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mineBookingerKnap.style.visibility = "visible";
         logIndKnap.textContent = "Log ud";
         forsideOverskrift.textContent = "Velkommen, Jonas"
+        forsideTekst.textContent = "Du har nu mulighed for at booke en tid hos os. Du kan også se og administrere dine bookinger under Mine bookinger.";
         bookingFormular.style.display = "block";
     } else {
         mineBookingerKnap.style.visibility = "hidden";
