@@ -1,22 +1,10 @@
-let isLoggedIn = false;
-
 let users = [
     {username: "admin", password: "admin"},
     {username: "fablab", password: "1234"},
     {username: null, password: null}
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (isLoggedIn === "true") {
-        window.location.href = "index.html";
-        console.log("User is already logged in. Navigating to homepage...")
-    } else {
-        console.log("User is not logged in");
-    }
-});
-
-function logIn(event) {
-    event.preventDefault();
+function logIn() {
 
     let brugernavn = document.getElementById("login-username").value;
     let password = document.getElementById("login-password").value;
@@ -24,22 +12,22 @@ function logIn(event) {
 
     if (brugernavn === "" && password === "") {
         localStorage.setItem("isLoggedIn", true);
-        console.log("User logged in without input");
+        console.log("Brugeren er logget ind uden input");
         window.location.href = "index.html";
         return;
     }
 
-    // Check against other users
+    // Tjekker for eksisterende brugere for at logge ind
     for (let user of users) {
         if (brugernavn === user.username && password === user.password) {
             localStorage.setItem("isLoggedIn", true);
-            console.log("User logged in");
+            console.log("Brugeren logges ind");
             window.location.href = "index.html";
             return;
         }
     }
 
-    // If no match is found
+    // Ingen match
     validationText.textContent = "Login failed, please try again.";
-    console.log("Login failed");
+    console.log("Logind fejlet");
 }
