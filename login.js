@@ -4,7 +4,8 @@ let users = [
     {username: null, password: null}
 ];
 
-function logIn() {
+function logIn(event) {
+    event.preventDefault();
 
     let brugernavn = document.getElementById("login-username").value;
     let password = document.getElementById("login-password").value;
